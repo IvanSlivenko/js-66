@@ -49,6 +49,7 @@
 // console.log(massage); //Cyberdyne System has 200 bots in stock
 //////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////////
 //Напиши скрипт, що розраховує індекс масси тіла.Для цього необхідно розділити вагу в кілораммах на квадрат
 //висоти людини в метрах
  
@@ -62,9 +63,9 @@
 
 
 
-let weight = "88,3"; 
-// let weiht = "88.3";
-let height = "1.75";
+// let weight = "88,3";
+// // let weiht = "88.3";
+// let height = "1.75";
 
 
 
@@ -92,31 +93,43 @@ let height = "1.75";
 //3.Склеїмо  цілу частину і дробову та поставимо правильний розділювач (.);
 //4.
 
-const commaIndex = weight.indexOf(","); // Знаходимо індекс коми
-console.log("🚀 ~ file: script.js ~ line 95 ~ commaIndex", commaIndex);
+// const commaIndex = weight.indexOf(","); // Знаходимо індекс коми
+// console.log("🚀 ~ file: script.js ~ line 95 ~ commaIndex", commaIndex);
 
-const valueAfterComma = weight.slice(commaIndex + 1); //Копіюємо числа після коми
-console.log("🚀 ~ file: script.js ~ line 98 ~ valueAfterComma", valueAfterComma);
+// const valueAfterComma = weight.slice(commaIndex + 1); //Копіюємо числа після коми
+// console.log("🚀 ~ file: script.js ~ line 98 ~ valueAfterComma", valueAfterComma);
 
-const valueBeforeComma = (Number.parseInt(weight)); //Копіюємо число до коми
-console.log("🚀 ~ file: script.js ~ line 100 ~ valueBeforeComma", valueBeforeComma)
+// const valueBeforeComma = (Number.parseInt(weight)); //Копіюємо число до коми
+// console.log("🚀 ~ file: script.js ~ line 100 ~ valueBeforeComma", valueBeforeComma)
 
-weight = +`${valueBeforeComma}${"."}${valueAfterComma}`; // З"єднуємо строки та переводимо в число
-console.log("🚀 ~ file: script.js ~ line 100 ~ weight =", weight)
+// weight = +`${valueBeforeComma}${"."}${valueAfterComma}`; // З"єднуємо строки та переводимо в число
+// console.log("🚀 ~ file: script.js ~ line 100 ~ weight =", weight)
 
-const bmi = Number((weight / Math.pow(height, 2)).toFixed(1));// підносимо до степені 2 змінну height
-console.log("🚀 ~ file: script.js ~ line 101 ~ bmi", bmi)
+// const bmi = Number((weight / Math.pow(height, 2)).toFixed(1));// підносимо до степені 2 змінну height
+// console.log("🚀 ~ file: script.js ~ line 101 ~ bmi", bmi)
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+// console.log(6 % 4); // Оператор % показує остачу після ділення на ціле число (6:4 = 1 цілих;  1*4=4; 6 - 4 = 2 цілих)
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// let cost = 0;
+// const subscription = "free";
+// if (subscription === "free") { 
+// cost = 100;
+// }
+// console.log(cost);
 
 
+// let cost = 10;
+// const subscription = "free";
+// if (subscription === "pro") { 
+// cost = 100;
+// }
+// console.log(cost);
 
-
-
-
-// console.log(Number.parseInt(weight));
-// .parseInt Парсимо цілу частину weight
-// Number  переводимо weight в число
-
-
+//////////////////////////////////////////////////////////////////
 
 
 
