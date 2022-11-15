@@ -116,7 +116,7 @@
 
 // let cost = 0;
 // const subscription = "free";
-// if (subscription === "free") { 
+// if (subscription === "free") {
 // cost = 100;
 // }
 // console.log(cost);
@@ -124,13 +124,184 @@
 
 // let cost = 10;
 // const subscription = "free";
-// if (subscription === "pro") { 
+// if (subscription === "pro") {
 // cost = 100;
 // }
 // console.log(cost);
 
 //////////////////////////////////////////////////////////////////
 
+// let test;
+// test = (Math.random(test).toFixed(2)) * (10 - 1);
+// console.log(test);
+// test = Math.ceil(test);
+// console.log(test);
+
+// const Min = 1;
+// const Max = 10;
+
+// test = Min + (Math.random(test).toFixed(2)) * (Max - Min)
+// test = Math.ceil(test);
+// console.log(test);
+/////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////
+// console.log("test");
+// console.log(true && 3);
+// console.log(false && 3);
+// console.log(true && 34 && 'kiwi');
+
+/////////////////////////////////////////////////
+
+// const question = prompt("Введіть пароль");
+
+// // console.log("🚀 ~ file: script.js ~ line 157 ~ question", question)
+// if (question === "1") {
+//     alert("Пароль вірний");
+// }
+// else {
+//     alert("Не вірний пароль");
+//  }
+
+///////////////////////////////////////////////////////////////
+// const hours = 14;
+// const minutes = 35;
+
+// let message = " ";
+
+// if (minutes === 0) {
+//     message = `${hours} г.`;
+
+// }
+// else {
+
+//     message = `${hours} г. ${minutes} хв.`;
+// }
+// console.log(message);
+////////////////////////////////////////////////////////////////
+
+// const UserInput = +prompt("Введіть число");
+// // console.log("🚀 ~ file: script.js ~ line 184 ~ UserInput",
+// // typeof UserInput)
+// // console.log();
+
+// if (UserInput > 0) {
+//     // alert("Це позитивне число")
+//     console.log("Це позитивне число");
+// }
+// else if (UserInput === 0) {
+//     // alert("Це 0")
+//     console.log("Це 0");
+// }
+// else if (UserInput < 0) {
+//     // alert("Це негативне число")
+//     console.log("Це негативне число");
+// }
 
 
+/////////////////////////////////////////////////////////////////////////
+// const a = 200;
+// const b = 180;
+// if (a > 100 && b > 100) {
+//     if (a > b)
+//         console.log(a);
+//     {
+//         console.log(b);
+//     }
+// else {
+//         console.log(b + 512);
+
+//     }
+// }
+/////////////////////////////////////////////////////////////////////////
+// const a = 200;
+// const b = 180;
+// console.log(Math.max(a, b));
+////////////////////////////////////////////////////////////////////////
+
+// const max = 100;
+// const min = 20;
+
+// for (let i = min; i <= max; i+=5) {
+//     // if (i % 5===0)console.log(i);
+    
+//     console.log(i);
+//     }
+
+///////////////////////////////////////////////////////////////////////
+
+
+
+// const userLogin = prompt("Bиведіть логін");
+
+
+// if (userLogin === "admin") {
+//     const password = +prompt("Введіть пароль");
+//     if (password ===11) {
+       
+//         alert("Привіт!");
+//     }
+//     else {
+//         alert(" Пароль не вірний");
+//     }
+    
+
+// }
+// else if (userLogin != "admin") {
+//     alert("Логін не вірний.");
+//  }
+
+/////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////
+// console.log(true && 3); //3
+// console.log(false && 3); //false
+// console.log(true && 4 && 'kiwi'); // kiwi
+// console.log(true && 0 && 'kiwi');// 0
+// console.log(true || 3);// true
+// console.log(true|| 3 || 4); // true
+// console.log(true || false || 7); // true
+// console.log(null || 2 ||undefined); // 2
+// console.log((1 && null && 2)>0); // 1 && null =null ; null && 2 = null ; null>0 = null = false
+// console.log(null || (2 && 3) || 4); // 2 && 3 = 3 ; Null || 3 = 3;
+///////////////////////////////////////////////////////////////////////////////////////
+// const quwestion = prompt("Яка офіційна назва JS ?");
+// if (quwestion.toLowerCase() === "ECMAScript".toLowerCase()) {
+//     alert("Вірно");
+// } else {
+//     alert("Не вірно");
+// }
+ ///////////////////////////////////////////////////////////////////////
+
+// const clients = ["Mango", "Poly", "Ajax"];
+// console.log(clients[1]);// Poly
+///////////////////////////////////////////////////////////
+// const clients = ["Mango", "Poly", "Ajax"];
+// clients[1] = "Omega";
+// clients[2] = "Alfa";
+// console.log(clients[1]);
+// console.log(clients);
+///////////////////////////////////////////////////////////
+// const clients = ["Mango", "Poly", "Ajax"];
+// clients[1] = "Omega";
+// clients[2] = "Alfa";
+// console.log(clients[1]); //Omega
+// console.log(clients);//(3) ['Mango', 'Omega', 'Alfa']
+// console.log(clients.length);//3
+//////////////////////////////////////////////////////////////
+// const clients = ["Mango", "Poly", "Ajax"];
+// clients[1] = "Omega";
+// clients[2] = "Alfa";
+// // console.log(clients[1]); //Omega
+// // console.log(clients);//(3) ['Mango', 'Omega', 'Alfa']
+// // console.log(clients.length);//3
+// const lastElementIndex = clients.length - 1;
+// console.log(lastElementIndex);//2
+// console.log(clients[lastElementIndex]);//Alfa
+/////////////////////////////////////////////////////////////
+// const clients = ["Mango", "Poly", "Ajax"];
+// for (let i=0; i < clients.length; i+=1 ){
+//   console.log(clients[i])  ;// Mango  Poly  Ajax
+// }
+///////////////////////////////////////////////////////////////////
 
