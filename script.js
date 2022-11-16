@@ -304,4 +304,101 @@
 //   console.log(clients[i])  ;// Mango  Poly  Ajax
 // }
 ///////////////////////////////////////////////////////////////////
+// const a = ["Mango"];
+// const b = a;
+// a.push("Poly");
+// b.push("Ajax");
+
+// console.log(a); //(3) ['Mango', 'Poly', 'Ajax']
+// console.log(b);//(3) ['Mango', 'Poly', 'Ajax'];
+////////////////////////////////////////////////////////////////////////
+// const name = "Mango";
+// console.log(name.split("")); //(5) ['M', 'a', 'n', 'g', 'o']
+////////////////////////////////////////////////////////////////////////
+
+// const message = "JavaSckript - це цікаво";
+// console.log(message.split(" "));//(4) ['JavaSckript', '-', 'це', 'цікаво']
+///////////////////////////////////////////////////////////////////////////////
+// const words = ['JavaSckript', '-', 'це', 'цікаво'];
+// console.log(words.join("*"));//JavaSckript*-*це*цікаво
+////////////////////////////////////////////////////////////////////////////
+// const clients = ["Mango", "Ajax", "Poly", "Kivi"];
+// console.log(clients.indexOf("Poly")); //2
+// console.log(clients.indexOf("Kivi")); //3
+// console.log(clients.includes("Popy"));//false
+// console.log(clients.includes("Poly"));//true
+///////////////////////////////////////////////////////////////////////////
+// const redFruits = ["apple", "strawberry", "cherry", "cranberries"];
+// const fruit = "cherry";
+
+
+// const hasFruit = redFruits.includes(fruit);
+
+// if (hasFruit) {
+//     console.log(`${fruit} is red fruit`); //cherry is red fruit
+
+
+// }
+///////////////////////////////////////////////////////
+
+// const numbers = [];
+// numbers.push(1);
+// console.log(numbers);//[1]
+// numbers.push(2);
+// console.log(numbers);//[1,2]
+// numbers.push(3);
+// console.log(numbers);//[1,2]
+// numbers.push(4);
+// console.log(numbers);//[1,2,3]
+// numbers.push(5);
+// console.log(numbers);//[1,2,3,4]
+// numbers.push(5);
+// console.log(numbers);//[1,2,3,4,5]
+///////////////////////////////////////////////////////////////////////
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(numbers.pop()); //(5 ) [1, 2, 3, 4]
+// console.log(numbers);
+// console.log(numbers.pop()); //(4) [1, 2, 3]
+// console.log(numbers);
+// console.log(numbers.pop()); //(3) [1, 2]
+// console.log(numbers);
+// console.log(numbers.pop()); //(2) [1]
+// console.log(numbers);
+/////////////////////////////////////////////////////////////////////////////
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.slice());
+// console.log(clients.slice(1));
+// console.log(clients.slice(1, 3));
+// console.log(clients.slice(-1));
+
+////////////////////////////////////////////////////////////////////
+// const scores = [1, 2, 3, 4, 5];
+// const deletedscores = scores.splice(1, 3);
+// console.log(deletedscores);//[2,3,4]
+// console.log(scores);//[]1,5]
+
+///////////////////////////////////////////////////
+// const colors = ["red", "green", "blue"];
+// colors.splice(1, 0, "yellow", " pink"); //(5) ['red', 'yellow', ' pink', 'green', 'blue']
+
+// console.log(colors);
+///////////////////////////////////////////////////
+// const Languages = ["C", "C++", "Java", "JavaScript"];
+// Languages.splice(1, 1, "Python");
+// console.log(Languages);// (4) ['C', 'Python', 'Java', 'JavaScript']
+// Languages.splice(2, 1, "C#", "Swift", "Go");
+// console.log(Languages);// (6) ['C', 'Python', 'C#', 'Swift', 'Go', 'JavaScript']
+/////////////////////////////////////////////////////////////
+const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+const newclients = ["Monkong", "Singu"];
+const allClientsWithOldFirst = oldClients.concat(newclients);
+console.log(allClientsWithOldFirst); //(6) ['Mango', 'Ajax', 'Poly', 'Kiwi', 'Monkong', 'Singu']
+
+const allClientsWithNewFirst = newclients.concat(oldClients);
+console.log(allClientsWithNewFirst); //(6) ['Monkong', 'Singu', 'Mango', 'Ajax', 'Poly', 'Kiwi']
+
+
+
+
 
