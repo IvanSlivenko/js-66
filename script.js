@@ -390,15 +390,104 @@
 // Languages.splice(2, 1, "C#", "Swift", "Go");
 // console.log(Languages);// (6) ['C', 'Python', 'C#', 'Swift', 'Go', 'JavaScript']
 /////////////////////////////////////////////////////////////
-const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
-const newclients = ["Monkong", "Singu"];
-const allClientsWithOldFirst = oldClients.concat(newclients);
-console.log(allClientsWithOldFirst); //(6) ['Mango', 'Ajax', 'Poly', 'Kiwi', 'Monkong', 'Singu']
+// const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// const newclients = ["Monkong", "Singu"];
+// const allClientsWithOldFirst = oldClients.concat(newclients);
+// console.log(allClientsWithOldFirst); //(6) ['Mango', 'Ajax', 'Poly', 'Kiwi', 'Monkong', 'Singu']
 
-const allClientsWithNewFirst = newclients.concat(oldClients);
-console.log(allClientsWithNewFirst); //(6) ['Monkong', 'Singu', 'Mango', 'Ajax', 'Poly', 'Kiwi']
+// const allClientsWithNewFirst = newclients.concat(oldClients);
+// console.log(allClientsWithNewFirst); //(6) ['Monkong', 'Singu', 'Mango', 'Ajax', 'Poly', 'Kiwi']
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//githowto
+//console.log(11);
+// let a = 5;
+// let b = a;
 
+// a = 7;
+// // console.log(a, b);
 
+// const arr = [1, 2, 3];
+// const arr2 = arr;
+// console.log(arr, arr2);
+// arr[1] = 55;
+// // console.log(arr, arr2);
+
+// const arr3 = arr.slice(0);
+// console.log(arr3);
+//////////////////////////////////////
+
+// const dogs = ["Pes", "Sobaca", 3, 4];
+// for (let dog of dogs) {
+//  console.log(dog);
+
+// }
+//////////////////////////////////////////
+
+// const genres = ["Jazz", "Blues"] ;
+// console.log("🚀 ~ file: script.js ~ line 428 ~ genres", genres)
+// console.log("🚀 ~ file: script.js ~ line 428 ~ genres", genres)
+// genres.push("Rock");
+// console.log("🚀 ~ file: script.js ~ line 428 ~ genres", genres)
+// console.log(genres[0]);
+// const arrlength = genres.length-1;
+//  console.log("🚀 ~ file: script.js ~ line 434 ~ arrlength", arrlength)
+// console.log(genres[arrlength]);
+// console.log(genres.shift());
+// console.log(genres.slice(0,1))
+// console.log(genres);
+// // console.log(genres[0]);
+// genres.unshift("Country", "Reggae");
+//  console.log(genres);
+
+//////////////////////////////////////////////////////
+// const values = "8 11"
+// const valuesArray = values.split(" ");
+// console.log("🚀 ~ file: script.js ~ line 446 ~ valuesArray", valuesArray);
+// const square = valuesArray[0] * valuesArray[1];
+// console.log("🚀 ~ file: script.js ~ line 448 ~ square", square);
+/////////////////////////////////////////////////////////////////////////
+
+// const fruits = ["oun", "two", "free","foo","fei"];
+// for (let i = 0; i < fruits.length; i++) {
+   
+//     console.log(`${i+1}: ${fruits[i]}`);
+
+// }
+
+///////////////////////////////////////////////////////////////
+
+// const names = "Jacobs,William,Solomon,Artemis";
+// const phones = "0674708721,0674708720,0674708722";
+
+// const namesArrey = names.split(",");
+// console.log("🚀 ~ file: script.js ~ line 464 ~ namesArrey", namesArrey);
+// const phonesArrey = phones.split(",");
+// console.log("🚀 ~ file: script.js ~ line 466 ~ phonesArrey", phonesArrey);
+// console.log(namesArrey, phonesArrey);
+// for (const i in namesArrey) {
+//     console.log(i);
+//     console.log(`${ namesArrey[i]} : ${ phonesArrey[i]}`);
+// }
+///////////////////////////////////////////////////////////////////////////
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for (let i = 0; i < arr.length; i++) {
+//     if(arr[i]===5)break
+//     console.log(arr[i]);
+// }
+//////////////////////////////////////////////////////////////////////////////
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === 5) continue;
+
+//     else console.log(arr[i]);
+// }
+/////////////////////////////////////////////////////////////////////////////
+
+// console.log("abc".padStart(10, "b"));
+// console.log("abc".padEnd(10, "b"));
+
+/////////////////////////////////////////////////////////////////////////////
 
 
