@@ -490,4 +490,93 @@
 
 /////////////////////////////////////////////////////////////////////////////
 
+// function add(a, b) {
+//     return a + b;
+    
+    
+// }
+// const sum = add(1, 5);
+// const sum2 = add(sum,5);
+// console.log(sum2);
+/////////////////////////////////////////////////////////////////////////////
+
+// function addPositive(a, b) {
+//     if (a >= 0 && n >= 0) {
+//         return a + b;
+
+//     }
+//     else {
+//         return 0;
+//     }
+// }
+// const sum = addPositive(-1, 5);
+// console.log(sum);
+/////////////////////////////////////////////////////////////////////////////
+// const bmi = calcBMI("88,3", "1.75");
+
+
+// function replaceCommaToDot(string){
+// return string.replace(",", ".");
+// }
+
+// // console.log(replaceCommaToDot(str));
+
+// function getRoundeNumber(number) {
+//     return Number(number.toFixed(1));
+// }
+// // console.log(getRoundeNumber(88.3976));
+
+// const bmi = calcBMI("88,3", "1.75");
+
+// function   calcBMI(weight,height) {
+//     weight = replaceCommaToDot(weight);
+//     height = replaceCommaToDot(height);
+
+//     return getRoundeNumber(weight / height ** 2);
+
+
+// }
+// console.log(bmi);
+
+////////////////////////////////////////////////////////
+// function add(a, b) {
+//     return a + b;
+// }
+
+// console.log(add(2 + 2 + 2, 2));
+//////////////////////////////////////////////////////
+
+// function finLargesNumber(numbers) {
+//     let max = numbers[0];
+//     // console.log(max);
+//     for (const number of numbers) {
+//         if (number > max) {
+//             max = number
+//         }
+       
+//     }
+
+//     return max;
+// }
+// console.log(finLargesNumber([5, 1, 7]));
+// console.log(finLargesNumber([2, 17, 94, 125, 23, 37]));
+// console.log(finLargesNumber([49,4,7,83,12]));
+/////////////////////////////////////////////////////////////
+
+function calAverage() { 
+    const numbers = arguments;
+    const numbersAmount = numbers.length;
+    let sum = 0;
+    
+    for (const number of numbers) { 
+        sum += number; // sum = sum + number
+    }
+    return sum / numbersAmount;
+}
+
+console.log(calAverage(1,2,3,4));
+console.log(calAverage(14, 8, 2));
+console.log(calAverage(27, 43, 2, 8, 36));
+
+///////////////////////////////////////////////////////////////
 
