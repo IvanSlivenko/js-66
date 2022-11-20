@@ -563,20 +563,249 @@
 // console.log(finLargesNumber([49,4,7,83,12]));
 /////////////////////////////////////////////////////////////
 
-function calAverage() { 
-    const numbers = arguments;
-    const numbersAmount = numbers.length;
-    let sum = 0;
+// function calAverage() {
+//     const numbers = arguments;
+//     const numbersAmount = numbers.length;
+//     let sum = 0;
     
-    for (const number of numbers) { 
-        sum += number; // sum = sum + number
-    }
-    return sum / numbersAmount;
-}
+//     for (const number of numbers) {
+//         sum += number; // sum = sum + number
+//     }
+//     return sum / numbersAmount;
+// }
 
-console.log(calAverage(1,2,3,4));
-console.log(calAverage(14, 8, 2));
-console.log(calAverage(27, 43, 2, 8, 36));
+// console.log(calAverage(1,2,3,4));
+// console.log(calAverage(14, 8, 2));
+// console.log(calAverage(27, 43, 2, 8, 36));
 
 ///////////////////////////////////////////////////////////////
+// function calculateEngravingPrice(message, pricePerWord) {
+//     const words = message.split(" ");
+//     const sum = words.length * pricePerWord;
+//     // return sum;
+//     console.log(words);
+//     console.log(sum);
+// }
 
+
+
+// calculateEngravingPrice("JavaScript is in my blood", 10)
+//   //повертає 50
+// calculateEngravingPrice("JavaScript is in my blood", 20)
+//   //повертає 100
+// calculateEngravingPrice("Web-development is creative work", 40)
+//   //повертає 160
+// calculateEngravingPrice("Web-development is creative work", 20)
+//   //повертає 80
+/////////////////////////////////////////////////////////////////////////
+
+// function makeStringFromArray(array, delimiter) {
+//   const string =array.join(delimiter);
+//   // Change code below this line
+
+
+
+//   // Change code above this line
+// //   return string;
+//     console.log(string);
+
+// }
+// makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " ");
+//   //повертає "Mango hurries to the train"
+// makeStringFromArray(["M", "a", "n", "g", "o"], "");
+//   //повертає "Mango"
+// makeStringFromArray(["top", "picks", "for", "you"], "_")
+//   //повертає "top_picks_for_you"
+  ///////////////////////////////////////////////////////////////////////////
+//   function slugify(title) {
+     
+//     //   const message = title.replaceAll(" ", "-").toLowerCase();
+//       const message = title.split(" ").join("-").toLowerCase();
+//       console.log(message);
+      
+      
+//     //   return message
+// }
+// slugify("Arrays for begginers")
+// // повертає "arrays-for-begginers"
+// slugify("English for developer")
+// // повертає "english-for-developer"
+// slugify("Ten secrets of JavaScript")
+// // повертає "ten-secrets-of-javascript"
+// slugify("How to become a JUNIOR developer in TWO WEEKS")
+// // повертає "how-to-become-a-junior-developer-in-two-weeks"
+//////////////////////////////////////////////////////////////////////////////
+
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// console.log(firstTwoEls);
+// const nonExtremeEls = fruits.slice(1, 4);
+// console.log(nonExtremeEls);
+
+// const lastThreeEls = fruits.slice(-3);
+// console.log(lastThreeEls);
+
+
+//Значення змінної firstTwoEls - це масив ["apple", "plum"]
+//Значення змінної nonExtremeEls - це масив ["plum", "pear", "orange"]
+//Значення змінної lastThreeEls - це масив ["pear", "orange", "banana"]
+
+//////////////////////////////////////////////////////////////////////////
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+
+// const allClients = oldClients.concat(newClients);
+// console.log(allClients);
+
+
+
+// Оголошена змінна allClients
+// Значення змінної allClients - це масив
+// ["Mango", "Ajax", "Poly", "Kiwi", "Peach", "Houston"]
+//////////////////////////////////////////////////////////////////////////
+// function makeArray(firstArray, secondArray, maxLength) {
+//     const message = firstArray.concat(secondArray);
+//     const messageTwo = message.splice(0, maxLength);
+//     console.log("////////////////////////////");
+//     // console.log(message);
+//     console.log(messageTwo);
+  
+//   }
+
+
+// makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)
+//   //повертає ["Mango", "Poly", "Ajax"]
+// makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)
+//   //повертає ["Mango", "Poly", "Houston", "Ajax"]
+// makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)
+//   //повертає ["Mango", "Ajax", "Chelsea"]
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)
+//   //повертає ["Earth", "Jupiter"]
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)
+//   //повертає ["Earth", "Jupiter", "Neptune", "Uranus"]
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)
+
+/////////////////////////////////////////////////////////////////////////////////
+
+
+// function calculateTotal(number) {
+//  // Change code below this line
+//     const i = 0;
+//     let sum = 0;
+//     for (let i = 1; i<=number; i=i+1) {
+//         sum =sum+i;
+//         // return sum;
+//         // console.log(sum);
+        
+//     }
+//     // return sum;
+//     console.log(sum);
+
+//   // Change code above this line
+// }
+// // calculateTotal(1)
+//   //повертає 1
+// calculateTotal(3)
+//   //повертає 6
+// calculateTotal(7)
+//   //повертає 28
+// calculateTotal(18)
+//   //повертає 171
+// calculateTotal(24);
+//   //повертає 300
+  /////////////////////////////////////////////////////////////////////////////
+//   const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i<= fruits.length-1; i=i+1) {
+//   const fruit = fruits[i];
+//   console.log(fruit);
+// }
+///////////////////////////////////////////////////////////////////////////////
+// function calculateTotalPrice(order) {
+//     let total = 0;
+    
+   
+//     for (let i = 0; i <= order.length-1; i = i + 1) {
+//         // console.log(order[i]);
+//         total = total + order[i];
+//     }
+  
+//     console.log(total);
+// //   return total;
+// }
+// calculateTotalPrice([12, 85, 37, 4])
+// // повертає 138
+// calculateTotalPrice([164, 48, 291])
+// //   //повертає 503
+// calculateTotalPrice([412, 371, 94, 63, 176])
+// //   //повертає 1116
+/////////////////////////////////////////////////////////////////////
+// function findLongestWord(string) {
+//     const arrStryng = string.split(" ");
+//     let WordLider = arrStryng[0];
+
+//     for (let i = 0; i <= arrStryng.length-1; i = i + 1) {
+
+//         if (arrStryng[i].length > WordLider.length) {
+//             WordLider = arrStryng[i];
+//         }
+    
+//         else {
+//             WordLider = WordLider;
+//         }
+//     }
+//       return WordLider ;
+//     }
+// findLongestWord("The quick brown fox jumped over the lazy dog")
+//   //повертає jumped
+// findLongestWord("Google do a roll")
+// //   //повертає Google.
+// findLongestWord("May the force be with you")
+// //   //повертає force
+///////////////////////////////////////////////////////////////////////////
+// function createArrayOfNumbers(min, max) {
+//     const numbers = [];
+   
+//    for(i=min; i<=max; i=i+1){
+//      numbers.push(i);
+//    }
+//     console.log(numbers);
+//     return numbers;
+// }
+
+
+// createArrayOfNumbers(1, 3)
+//   //повертає [1, 2, 3]
+// createArrayOfNumbers(14, 17)
+//   //повертає [14, 15, 16, 17]
+// createArrayOfNumbers(29, 34)
+// // повертає [29, 30, 31, 32, 33, 34]
+//////////////////////////////////////////////////////////////////////////
+// function filterArray(numbers, value) {
+//     const array = [];
+
+//     for (const number of numbers ) {
+//         // console.log(number);
+//         if (number > value) { 
+//             array.push(number);
+            
+//         }
+
+//     }
+
+//     console.log(array)
+//     return array;
+// }
+// filterArray([1, 2, 3, 4, 5], 3)
+//   //повертає [4, 5]
+// filterArray([1, 2, 3, 4, 5], 4)
+//   //повертає [5]
+// filterArray([1, 2, 3, 4, 5], 5)
+//   //повертає []
+// filterArray([12, 24, 8, 41, 76], 38)
+//   //повертає [41, 76]
+// filterArray([12, 24, 8, 41, 76], 20)
+//   //повертає [24, 41, 76]
+  //////////////////////////////////////////////////////////////////////////
