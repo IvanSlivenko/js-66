@@ -788,7 +788,7 @@
 
 //     for (const number of numbers ) {
 //         // console.log(number);
-//         if (number > value) { 
+//         if (number > value) {
 //             array.push(number);
             
 //         }
@@ -809,3 +809,208 @@
 // filterArray([12, 24, 8, 41, 76], 20)
 //   //повертає [24, 41, 76]
   //////////////////////////////////////////////////////////////////////////
+// function checkFruit(fruit) {
+
+//     const fruits = ["apple", "plum", "pear", "orange"];
+//    return fruits.includes(fruit);
+//     //console.log(message);
+// }
+
+// checkFruit("plum")
+//   //повертає true
+// checkFruit("mandarin")
+//   //повертає false
+// checkFruit("pear")
+//   //повертає true
+// checkFruit("Pear")
+//   //повертає false
+// checkFruit("apple")
+//   //повертає true
+  //////////////////////////////////////////////////////////////////////
+// function getCommonElements(array1, array2) {
+//   const array3 = [];
+//   for (let i = 0; i <= array1.length - 1; i = i + 1) {
+ 
+//     if (array2.includes(array1[i])) {
+//       array3.push(array1[i]);
+//     }
+
+//   }
+//   console.log(array3);
+//   return array3
+// }
+// getCommonElements([1, 2, 3], [2, 4])
+//   //повертає [2]
+// getCommonElements([1, 2, 3], [2, 1, 17, 19])
+//                  //повертає [1, 2]
+// getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27])
+//   //повертає [12, 27, 3]
+// getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40])
+//   //повертає [10, 30, 40]
+// getCommonElements([1, 2, 3], [10, 20, 30])
+//   //повертає []
+// /////////////////////////////////////////////////////////////////////////////
+// function calculateTotalPrice(order) {
+//   let total = 0;
+
+//   // for (let i = 0; i < order.length; i += 1) {
+//   //   total += order[i];
+//   // }
+//   for (const ordery of order) {
+//     total =total + ordery;
+//   }
+//   console.log(total);
+//   return total;
+// }
+
+// calculateTotalPrice([12, 85, 37, 4])
+//   //повертає 138
+// calculateTotalPrice([164, 48, 291])
+//   //повертає 503
+// calculateTotalPrice([412, 371, 94, 63, 176])
+//   //повертає 1116
+// calculateTotalPrice([])
+//   //повертає 0
+//   /////////////////////////////////////////////////////////////////////////////
+
+// function filterArray(numbers, value) {
+
+//   const filteredNumbers = [];
+
+//     for (const number of numbers) {
+   
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+
+//   }
+
+//  console.log(filteredNumbers);
+//   return filteredNumbers;
+// }
+
+// filterArray([1, 2, 3, 4, 5], 3)
+//   //повертає [4, 5]
+// filterArray([1, 2, 3, 4, 5], 4)
+//   //повертає [5]
+// filterArray([1, 2, 3, 4, 5], 5)
+//   //повертає []
+// filterArray([12, 24, 8, 41, 76], 38)
+//   //повертає [41, 76]
+// filterArray([12, 24, 8, 41, 7])
+//////////////////////////////////////////////////////////////////
+// function getEvenNumbers(start, end) {
+//   const array = [];
+//   const array2 = [];
+//   for (let i = start; i<= end; i=i+1) {
+//     array.push(i);
+    
+//   }
+//   for (let numer of array) {
+//     if (numer%2===0 ) {
+//       array2.push(numer);
+//     }
+//   }
+//   console.log(array2);
+//   return array2;
+//   }
+// getEvenNumbers(2, 5)
+//   //повертає [2, 4]
+// getEvenNumbers(3, 11)
+//   //повертає [4, 6, 8, 10]
+// getEvenNumbers(6, 12)
+//   //повертає [6, 8, 10, 12]
+// getEvenNumbers(8, 8)
+//   //повертає [8]
+// getEvenNumbers(7, 7)
+//   //повертає []
+//   ///////////////////////////////////////////////////////////////////
+// function findNumber(start, end, divisor) {
+//   let number;
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//       // break;
+//        console.log(number);
+// return number;
+//     }
+//   }
+ 
+//  }
+// findNumber(2, 6, 5)
+//   //повертає 5
+// findNumber(8, 17, 3)
+//   //повертає 9
+// findNumber(6, 9, 4)
+//   //повертає 8
+// findNumber(16, 35, 7)
+// /////////////////////////////////////////////////////////////////////
+// function includes(array, value) {
+// for (const arr of array) {
+//     if (arr === value) {
+//       console.log(true);
+//       return true;
+//         }
+//   }
+//     console.log(false);
+//     return false
+// }
+ 
+// includes([1, 2, 3, 4, 5], 3)
+//   //повертає true
+// includes([1, 2, 3, 4, 5], 17)
+//   //повертає false
+// includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter")
+//   //повертає true
+// includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus")
+//   //повертає false
+// includes(["apple", "plum", "pear", "orange"], "plum")
+//   //повертає true
+// includes(["apple", "plum", "pear", "orange"], "kiwi")
+//   //повертає false
+//   ///////////////////////////////////////////////////////////////////
+
+// const book = {
+//   title: "The Last KongDom",
+//   author: "Bernard Cornwell",
+//   genres: ["historycsl prose", "adventure"],
+//   isPublik: true,
+//   rating: 8.38,
+//   price :100.50,
+  
+// }
+// const booktitle = book.title;
+// console.log(booktitle);
+// const bookGenres = book.genres;
+// console.log(bookGenres);
+// const bookPrice = book.price;
+// console.log(bookPrice);
+////////////////////////////////////////////////////////////////////////
+// const user = {
+//   name: "Ivan",
+//   tag: "jgluke",
+//   location: {
+//     contry: "Jamaica",
+//     city: "Ocho Rios",
+//   },
+//   hobbies: ["swiming", "music", "sci-fi"],
+  
+// }
+// const locat = user.location;
+
+// console.log(locat.city);
+// console.log(locat.contry);
+// // console.log(11);
+///////////////////////////////////////////////////////////////////////////
+// const namy = "Ivan";
+// const Famili = "Slivenko";
+
+// const User = {
+//   namy,
+//   Famili,
+// };
+// console.log(User.namy);
+// console.log(User.Famili);
+// /////////////////////////////////////////////////////////////////////////////
+
+
