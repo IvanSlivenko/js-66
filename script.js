@@ -1012,5 +1012,101 @@
 // console.log(User.namy);
 // console.log(User.Famili);
 // /////////////////////////////////////////////////////////////////////////////
+// const book = {
+//   title: "The Last Kindom",
+//   author: "Bernard Cornwell",
+//   genres: ["historcal prose", "adventure"],
+//   rating: 8.38,
+// };
+// for (const key in book) {
+//   // console.log(`${key} - ${book[key]}` );
+//   ////////////////////////////////////////////////////////////////////////////
 
+
+
+// }
+// const keys = Object.keys(book);
+// console.log(keys);
+
+////////////////////////////////////////////////////////////////////////////////
+// const book = {
+//   title: "The Last Kindom",
+//   author: "Bernard Cornwell",
+//   genres: ["historcal prose", "adventure"],
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+// const values = Object.values(book);
+// for (const key of keys) {
+//   // console.log(key);
+//   // console.log(book[key]);
+//   }
+// console.log(keys);
+// console.log(values);
+///////////////////////////////////////////////////////////////////
+// const goods = {
+//   apples: 6,
+//   grapes: 3,
+//   bread: 4,
+//   cheese: 7,
+
+// };
+// const values = Object.values(goods);
+// console.log(values);
+// let total = 0;
+// for (const value of values) {
+//   total = total + value;
+// }
+// console.log(total);
+//
+///////////////////////////////////////////////////////////
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cronwell",
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+// console.log(keys);
+
+// const values = Object.values(book);
+// console.log(values);
+
+// const entries = Object.entries(book);
+// console.log(entries);
+
+// console.log(book);
+
+///////////////////////////////////////////////////////////////////////
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На березі спокійних вод",
+//     author: "Роберт Шеклі",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "Сон смішної людини",
+//     author: "Федір Достоєвський",
+//     rating: 7.75,
+//   },
+// ];
+
+// let totalRating = 0;
+
+// for (const book of books) { 
+//   // console.log(book);
+//   // console.log(book.title);
+//   // console.log(book.author);
+//   // console.log(book.rating);
+//   console.log(`Ретиннг книжки${book.title} дорівнює ${book.rating}`);
+//   totalRating = totalRating + book.rating;
+// }
+// const averageRating = (totalRating / books.length).toFixed(1);
+// console.log(`"Середній рейтинг дорівнює :" ${averageRating}`);
+// // console.log(averageRating);
+/////////////////////////////////////////////////////////////////////////////
 
