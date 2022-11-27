@@ -1097,7 +1097,7 @@
 
 // let totalRating = 0;
 
-// for (const book of books) { 
+// for (const book of books) {
 //   // console.log(book);
 //   // console.log(book.title);
 //   // console.log(book.author);
@@ -1108,5 +1108,535 @@
 // const averageRating = (totalRating / books.length).toFixed(1);
 // console.log(`"Середній рейтинг дорівнює :" ${averageRating}`);
 // // console.log(averageRating);
-/////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////
+
+// const apartment = {
+// imgUrl :"https://via.placeholder.com/640x480",
+// descr:"Spacious apartment in the city center",
+// rating:4,
+// price:2153,
+// tags:["premium", "promoted", "top"],
+// }
+// console.log("🚀 ~ file: script.js ~ line 1120 ~ apartment", apartment)
+// /////////////////////////////////////////////////////////////////////////////
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+// };
+
+
+// const aptRating = apartment.rating;
+// console.log(aptRating);
+// const aptDescr = apartment.descr;
+// console.log(aptDescr);
+// const aptPrice = apartment.price;
+// console.log(aptPrice);
+// const aptTags = apartment.tags;
+// console.log(aptTags);
+// ////////////////////////////////////////////////////////////
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+//   owner: {
+//     name: "Henry",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+
+
+// const ownerName = apartment.owner.name;
+// // console.log("🚀 ~ file: script.js ~ line 1155 ~ ownerName", ownerName)
+// const ownerPhone = apartment.owner.phone;
+// // console.log("🚀 ~ file: script.js ~ line 1157 ~ ownerPhone", ownerPhone)
+// const ownerEmail = apartment.owner.email;
+// // console.log("🚀 ~ file: script.js ~ line 1159 ~ ownerEmail", ownerEmail)
+// const numberOfTags = apartment.tags.length;
+// console.log("🚀 ~ file: script.js ~ line 1161 ~ numberOfTags", numberOfTags)
+// const firstTag = apartment.tags[0];
+// console.log("🚀 ~ file: script.js ~ line 1163 ~ firstTag", firstTag);
+// const lengthTag = apartment.tags.length;
+// const lastTag = apartment.tags[lengthTag-1];
+// console.log("🚀 ~ file: script.js ~ line 1165 ~ lastTag", lastTag)
+// // ////////////////////////////////////////////////////////////////
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+// };
+
+
+// const aptRating = apartment["rating"];
+// console.log("🚀 ~ file: script.js ~ line 1178 ~ aptRating", aptRating)
+// const aptDescr = apartment["descr"];
+// console.log("🚀 ~ file: script.js ~ line 1180 ~ aptDescr", aptDescr)
+// const aptPrice = apartment["price"];
+// console.log("🚀 ~ file: script.js ~ line 1182 ~ aptPrice", aptPrice)
+// const aptTags = apartment["tags"];
+// console.log("🚀 ~ file: script.js ~ line 1184 ~ aptTags", aptTags)
+// // //////////////////////////////////////////////////////////////////////////
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+//   owner: {
+//     name: "Henry",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+
+// apartment.price = 5000;
+// console.log(apartment.price);
+// apartment.rating = 4.7;
+// console.log("🚀 ~ file: script.js ~ line 1202 ~ apartment.rating", apartment.rating)
+
+// apartment.owner.name ="Henry Sibola";
+// console.log("🚀 ~ file: script.js ~ line 1205 ~ apartment.name", apartment.name)
+
+// apartment.tags.push("trusted");
+// console.log("🚀 ~ file: script.js ~ line 1208 ~ apartment.tags", apartment.tags)
+// ///////////////////////////////////////////////////////////////////////////////////////
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4.7,
+//   price: 5000,
+//   tags: ["premium", "promoted", "top", "trusted"],
+//   owner: {
+//     name: "Henry Sibola",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+
+// };
+
+// apartment.area = 60;
+// apartment.rooms = 3;
+// location = {country :"Jamaica",
+//             city:"Kingston",
+// }
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+// const nums1 = [1, 2, 3, 4];
+// const nums2 = [5, 6, 7, 8];
+// const arr = [...nums1, ...nums2];
+
+// const defaultUser = {
+//   name: "",
+//   age: 0,
+//   email: "",
+// };
+
+// const user1 = {
+//   ...defaultUser,
+//   age: 22,
+// };
+////////////////////////////////////////////////////
+// const user = {
+//   name: "Ivan",
+//   surname: "Slivenko",
+//   age: 22,
+
+// };
+
+// function getfullName({name, surname,...}) {
+//   return name + " " + surname;
+// }
+// const fullName = getfullName(user);
+// console.log(fullName);
+///////////////////////////////////////////////////////
+// const name = "Repair Droid";
+// const price = 2500;
+// const image = "https://via.placeholder.com/640x480";
+// const tags = ["on sale", "trending", "best buy"];
+
+// const product = {
+//   name,
+//   price,
+//   image,
+//   tags,
+// };
+
+// console.log(product.name);
+// console.log(product.price);
+// console.log(product.image);
+// console.log(product.tags);
+//////////////////////////////////////////////////////////////////////////////
+// const user = {
+//   name: "Alex",
+//   age: 30,
+  
+// };
+// console.log(user);
+
+// console.dir(Object);
+
+// const arr = ["h", "e", "l", "l", "o"];
+// console.table(arr);
+// console.table(user);
+
+/////////////////////////////////////////////////////////////////////////////////
+// const Langs = ["python", "javascript", "c++", "haskel", "php", "ryby"];
+// const LangsSorted = Langs.sort();
+// console.log("🚀 ~ file: script.js ~ line 1293 ~ LangsSorted", LangsSorted)
+
+// for (const j in Langs) {
+//   let wasSwap = false;
+//   for (let j= 0; j < Langs.length - 1; j++) {
+//     if (Langs[j].charCodeAt(0) > Langs[j + 1].charCodeAt(0)){
+//       const swap = Langs[j];
+//       Langs[j] = Langs[j + 1];
+//       Langs[j + 1] = swap;
+//       wasSwap = true;
+//     }
+//     if (!wasSwap) break;
+//   }
+
+// }
+// console.log(Langs);
+// /////////////////////////////////////////////////////////////////////////////////////////////
+// const emailInputName = "email";
+// const passwordInputName = "password";
+
+// const credentials = {
+//   // Change code below this line
+//   [emailInputName]: "henry.carter@aptmail.com",
+//   [passwordInputName]:"jqueryismyjam",
+
+
+//   // Change code above this line
+// };
+// console.log(credentials.email);
+// console.log(credentials.password);
+// /////////////////////////////////////////////////////////////////////////
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = [];
+// const values = [];
+
+// for (const key in apartment) {
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
+// console.table(apartment);
+// console.log(keys);
+// console.log(values);
+// // Change code below this line
+///////////////////////////////////////////////////////////////////////////
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: "apt",
+// };
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
+
+// for (const key in apartment) {
+//   // Change code below this line
+// if(apartment.hasOwnProperty(key)){
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
+//   // Change code above this line
+// }
+//////////////////////////////////////////////////////////////////
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventyre"],
+//   rating: 8.38,
+// }
+
+// const keys = Object.keys(book);
+// console.log(keys);
+
+// for (const key of keys) {
+//   console.log(key);
+//   console.log(book[key]);
+//   }
+
+
+// ////////////////////////////////////////////////////////////////////
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// console.log(keys);
+// for (const key of keys) {
+//   values.push(apartment[key]);
+//   // console.log(values);
+// }
+// console.log(values);
+
+// //keys = ["descr", "rating", "price"];
+// //values = ["Spacious apartment in the city center", 4, 2153];
+// // //////////////////////////////////////////////////////////////////////////////
+
+// function countProps(object) {
+//   // Change code below this line
+//   let propCount = 0;
+
+//   const ObjectAlt = Object.keys(object);
+//   console.log(ObjectAlt);
+//     for (const key of ObjectAlt ) {
+//       propCount = propCount + 1;
+//     }
+//     console.log(propCount);
+//   return propCount;
+//   // Change code above this line
+// }
+// countProps({})
+
+// countProps({ name: "Mango", age: 2 })
+
+//   //повертає 2
+// countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })
+//   //повертає 3
+// // ///////////////////////////////////////////////////////////////////////////
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// // Change code below this line
+
+//   const keys = Object.keys(apartment);
+//   const values = Object.values(apartment);
+//   console.log(keys);
+//   console.log(values);
+
+//  // keys - це масив ["descr", "rating", "price"]
+// // values - це масив ["Spacious apartment in the city center", 4, 2153]
+
+// // //////////////////////////////////////////////////////////////////////////////
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // const arrKeys = Object.keys(salaries);
+//   const arrValues = Object.values(salaries);
+  
+//   for (const key of arrValues) {
+//     totalSalary = totalSalary + key;
+
+//   }
+
+//   // Change code above this line
+//   console.log(totalSalary);
+//   return totalSalary;
+// }
+
+// countTotalSalary({})
+//   //повертає 0
+// countTotalSalary({ mango: 100, poly: 150, alfred: 80 })
+//   //повертає 330
+// countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 })
+//   //повертає 400
+// //   /////////////////////////////////////////////////////////////////////
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+
+// // for (let i = 0; i <= colors.length - 1;i=i+1) {
+//   for (const key of colors){
+
+//   hexColors.push(key.hex);
+//   rgbColors.push(key.rgb);
+// }
+// console.log(hexColors);
+// console.log(rgbColors);
+// // ////////////////////////////////////////////////////////////////////////////
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   // Change code below this line
+//   let tovapPrice = null;
+
+// for (let key of products) {
+//   if (key.name === productName) {
+//     tovapPrice = key.price;
+//     }
+//   }
+//   console.log(tovapPrice);
+// return tovapPrice;
+// }
+
+
+//   // Change code above this line
+
+// getProductPrice("Radar")
+//   //повертає 1300.
+// getProductPrice("Grip")
+//   //повертає 1200.
+// getProductPrice("Droid")
+//   //повертає 400.
+// getProductPrice("Engine")
+// // повертає null.
+// // //////////////////////////////////////////////////////////////////////////
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+
+    
+  
+//   arr = [];
+//   for (const key of products) {
+//     if (key[propName]) {
+//       arr.push(key[propName]);
+//     }
+//      }
+//     console.log(arr);
+//     return arr;
+
+    
+
+//     // Change code above this line
+ 
+// }
+
+// getAllPropValues("name")
+//   //повертає ["Radar", "Scanner", "Droid", "Grip"]
+// getAllPropValues("quantity")
+//   //повертає [4, 3, 7, 9]
+// getAllPropValues("price")
+//   // повертає [1300, 2700, 400, 1200]
+// getAllPropValues("category")
+//   //повертає []
+// // //////////////////////////////////////////////////
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+  
+//   // Change code below this line
+//   totalPrice=0;
+  
+//   for (let product of products) {
+//     // console.log("................................" );
+//     // console.log(productName);
+//     // console.log(product.name);
+//     // console.log("................................" );
+    
+//     if (product.name === productName) {
+//   // console.log("ok");
+//       totalPrice = product.price * product.quantity;
+//       // console.log(totalPrice);
+// }
+  
+// }
+//   console.log(totalPrice);
+//   return totalPrice;
+
+//   // Change code above this line
+// }
+
+// calculateTotalPrice("Blaster")
+//   //повертає 0
+// calculateTotalPrice("Radar")
+//   //повертає 5200
+// calculateTotalPrice("Droid")
+//   //повертає 2800
+// calculateTotalPrice("Grip")
+//   //повертає 10800
+// calculateTotalPrice("Scanner")
+//   //повертає 8100
+//   ////////////////////////////////////////////////
+// const temps = [14, -4, 25, 8, 11];
+// console.log(temps);
+// console.log(...temps);
+// console.log(Math.max(...temps));
+////////////////////////////////////////////////////
+// const temps = [14, -4, 8, 11];
+// console.log("🚀 ~ file: script.js ~ line 1592 ~ temps", temps)
+// const copyOfTemps = [...temps];
+// console.log("🚀 ~ file: script.js ~ line 1593 ~ copyOfTemps", copyOfTemps)
+// ////////////////////////////////////////////////////////////////////////////
+// const first = { proA: 5, proB: 10, proC: 50 };
+// const second = { proC: 15, proD: 20 };
+
+// const third = { ...first, ...second };
+// console.table(second);
+// console.log(Object.keys(second));
+// console.log(Object.values(second));
+///////////////////////////////////////////////
+// function multiply(...args) { 
+
+//   console.log(args);
+// }
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4,);
+/////////////////////////////////////////////////////
+
+// function multiply(firstNumber, secondNumber, ...otherArgs) { 
+//   console.log("......................");
+//   console.log(firstNumber);
+//   console.log("......................");
+//   console.log(secondNumber);
+//   console.log("......................");
+//   console.log(...otherArgs);
+//   console.log("......................");
+// }
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1,2,3,4,5)
+// ///////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
