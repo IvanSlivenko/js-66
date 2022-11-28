@@ -1601,7 +1601,7 @@
 // console.log(Object.keys(second));
 // console.log(Object.values(second));
 ///////////////////////////////////////////////
-// function multiply(...args) { 
+// function multiply(...args) {
 
 //   console.log(args);
 // }
@@ -1610,7 +1610,7 @@
 // multiply(1, 2, 3, 4,);
 /////////////////////////////////////////////////////
 
-// function multiply(firstNumber, secondNumber, ...otherArgs) { 
+// function multiply(firstNumber, secondNumber, ...otherArgs) {
 //   console.log("......................");
 //   console.log(firstNumber);
 //   console.log("......................");
@@ -1623,11 +1623,156 @@
 // multiply(1, 2, 3);
 // multiply(1,2,3,4,5)
 // ///////////////////////////////////////////////////////////
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+
+// const { yesterday, today, tomorrow } = highTemperatures;
+// // const yesterday = highTemperatures.yesterday;
+// // const today = highTemperatures.today;
+// // const tomorrow = highTemperatures.tomorrow;
+
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+// console.log(meanTemperature);
+////////////////////////////////////////////////////////////
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+
+// // const yesterday = highTemperatures.yesterday;
+// // const today = highTemperatures.today;
+// // const tomorrow = highTemperatures.tomorrow;
+// // const icon = highTemperatures.icon;
+
+// const {
+//   yesterday,
+//   today,
+//   tomorrow,
+//   icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+// } = highTemperatures;
+
+
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+// console.log(meanTemperature);
+
+//icon - це рядок "https://www.flaticon.com/svg/static/icons/svg/2204
+//////////////////////////////////////////////////////////////////////
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+
+// // const highYesterday = highTemperatures.yesterday;
+// // const highToday = highTemperatures.today;
+// // const highTomorrow = highTemperatures.tomorrow;
+// // const highIcon = highTemperatures.icon;
+
+// const { 
+//       yesterday:highYesterday, 
+//        today:highToday, 
+//        tomorrow:highTomorrow, 
+//        icon:highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg", 
+//       } = highTemperatures;
+
+
+// // Change code above this line
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+// console.log(meanTemperature);
+//highIcon - це рядок "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"
+//////////////////////////////////////////////////////////////////////////////////////////
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+
+// for (const {hex, rgb,} of colors) {
+//   hexColors.push(hex);
+//   rgbColors.push(rgb);
+// }
+// ////////////////////////////////////////////////////
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Change code below this line`
 
 
 
+// // const highToday = forecast.today.high;
+// // const lowToday = forecast.today.low;
+// // const todayIcon = forecast.today.icon;
 
+// // const highTomorrow = forecast.tomorrow.high;
+// // const lowTomorrow = forecast.tomorrow.low;
+// // const tomorrowIcon = forecast.tomorrow.icon;
 
+// const { today: {
+//   low:lowToday,
+//   high:highToday,
+//   icon:todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+// },
+//   tomorrow: {
+//     low:lowTomorrow,
+//     high:highTomorrow,
+//     icon:tomorrowIcon="https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+//   }
+// } = forecast;
+
+// console.log(lowToday);
+// console.log(highToday);
+// console.log(todayIcon);
+// console.log(lowTomorrow);
+// console.log(highTomorrow);
+// console.log(tomorrowIcon);
+// ////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+function calculateMeanTemperature(forecast) {
+  // const todayLow = forecast.today.low;
+  // const todayHigh = forecast.today.high;
+  // const tomorrowLow = forecast.tomorrow.low;
+  // const tomorrowHigh = forecast.tomorrow.high;
+  const {
+    today: { low: todayLow,
+      high: todayHigh
+    },
+    tomorrow: { low: tomorrowLow,
+      high: tomorrowHigh
+    }
+  } = forecast;
+    // Change code above this line
+  const x = (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4
+  console.log(x);
+  return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+}
+
+calculateMeanTemperature({ today: { low: 28, high: 32 }, tomorrow: { low: 25, high: 29 } })
+//повертає 28.5
+calculateMeanTemperature({ today: { low: 37, high: 40 }, tomorrow: { low: 33, high: 38 } })
+ //повертає 37
+///////////////////////////////////////////////////////////////////////////////////////
 
 
 
