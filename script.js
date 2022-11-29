@@ -1677,11 +1677,11 @@
 // // const highTomorrow = highTemperatures.tomorrow;
 // // const highIcon = highTemperatures.icon;
 
-// const { 
-//       yesterday:highYesterday, 
-//        today:highToday, 
-//        tomorrow:highTomorrow, 
-//        icon:highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg", 
+// const {
+//       yesterday:highYesterday,
+//        today:highToday,
+//        tomorrow:highTomorrow,
+//        icon:highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
 //       } = highTemperatures;
 
 
@@ -1748,31 +1748,171 @@
 // console.log(highTomorrow);
 // console.log(tomorrowIcon);
 // ////////////////////////////////////////////////////////////////////////////////
-// Change code below this line
-function calculateMeanTemperature(forecast) {
-  // const todayLow = forecast.today.low;
-  // const todayHigh = forecast.today.high;
-  // const tomorrowLow = forecast.tomorrow.low;
-  // const tomorrowHigh = forecast.tomorrow.high;
-  const {
-    today: { low: todayLow,
-      high: todayHigh
-    },
-    tomorrow: { low: tomorrowLow,
-      high: tomorrowHigh
-    }
-  } = forecast;
-    // Change code above this line
-  const x = (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4
-  console.log(x);
-  return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
-}
+// // Change code below this line
+// function calculateMeanTemperature(forecast) {
+//   // const todayLow = forecast.today.low;
+//   // const todayHigh = forecast.today.high;
+//   // const tomorrowLow = forecast.tomorrow.low;
+//   // const tomorrowHigh = forecast.tomorrow.high;
+//   const {
+//     today: { low: todayLow,
+//       high: todayHigh
+//     },
+//     tomorrow: { low: tomorrowLow,
+//       high: tomorrowHigh
+//     }
+//   } = forecast;
+//     // Change code above this line
+//   const x = (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4
+//   console.log(x);
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
 
-calculateMeanTemperature({ today: { low: 28, high: 32 }, tomorrow: { low: 25, high: 29 } })
-//повертає 28.5
-calculateMeanTemperature({ today: { low: 37, high: 40 }, tomorrow: { low: 33, high: 38 } })
- //повертає 37
-///////////////////////////////////////////////////////////////////////////////////////
+// calculateMeanTemperature({ today: { low: 28, high: 32 }, tomorrow: { low: 25, high: 29 } })
+// //повертає 28.5
+// calculateMeanTemperature({ today: { low: 37, high: 40 }, tomorrow: { low: 33, high: 38 } })
+//  //повертає 37
+// ///////////////////////////////////////////////////////////////////////////////////////
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+// console.log(bestScore);
+// console.log(worstScore);
+// // /////////////////////////////////////////////////////////////////////////
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// console.log(allScores);
+// const bestScore = Math.max(...allScores);
+// console.log(bestScore);
+// const worstScore = Math.min(...allScores);
+// console.log(worstScore);
+// ////////////////////////////////////////////////////////////////////////////
+
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = { ...defaultSettings, ...overrideSettings };
+// console.table(finalSettings);
+// ///////////////////////////////////////////////////////////////////////////////////////
+// function makeTask(data) {
+//   const test = {
+    
+//     category: "General",
+//     priority: "Normal",
+//     completed: false,
+//   }
+//   // Change code below this line
+//   console.log({...test, ...data});
+//   return { ...test, ...data };
+//   // Change code above this line
+// }
+
+// makeTask({})
+//   //повертає { category: "General", priority: "Normal", completed: false }
+// makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" })
+// //повертає { category: "Homemade", priority: "Low", text: "Take out the trash",
+// //completed: false }
+// makeTask({ category: "Finance", text: "Take interest" })
+// //повертає { category: "Finance", priority: "Normal", text: "Take interest",
+// //completed: false }
+// makeTask({ priority: "Low", text: "Choose shampoo" })
+//   //повертає { category: "General", priority: "Low", text: "Choose shampoo",
+//   //completed: false }
+// makeTask({ text: "Buy bread" })
+//   //повертає { category: "General", priority: "Normal", text: "Buy bread",
+//   //completed: false }
+//   /////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// function add(...args) {
+//   // Change code above this line
+//   // console.log(args);
+//   rez = 0;
+//   for (const arg of args) {
+//     rez = rez + arg;
+//   }
+//   console.log(rez);
+//   return rez;
+// }
+// add(15, 27,100,200,100)
+  //повертає 42
+// add(12, 4, 11, 48)
+  //повертає 75
+// add(32, 6, 13, 19, 8)
+  //повертає 78
+// add(74, 11, 62, 46, 12, 36)
+  //повертає 241
+//   ////////////////////////////////////////////////////////////////////////////
+//   function addOverNum(a,...args) {
+  
+//     let total = 0;
+   
+//     for (const arg of args) {
+//     // total += arg;
+//     if (arg > a) { 
+//       total = total + arg;
+//     }
+//     }
+
+
+//       // console.log("/////////////////////////////////////////");
+//       // console.log(etalon);
+//       // console.log(altArr);
+//       console.log(total);
+//   return total;
+//   // Change code above this line
+// }
+// addOverNum(50, 15, 27)
+//   //повертає 0
+// addOverNum(10, 12, 4, 11, 48, 10, 8)
+//   //повертає 71
+// addOverNum(15, 32, 6, 13, 19, 8)
+//   //повертає 51
+// addOverNum(20, 74, 11, 62, 46, 12, 36)
+//   //повертає 218
+//   //////////////////////////////////////////////////////////////////////////////////
+// // Change code below this line
+// function findMatches([...masOun],...ars) {
+//   const matches = []; // Don't change this line
+
+//   // Change code above this line
+//   console.log("////////////////////////");
+//   // console.log(masUon);
+//   // console.log(...ars);
+//   for (let key of ars) {
+//     for (let x of masOun) { 
+//       if (key === x) { 
+//         matches.push(key);
+//       }
+
+//     } 
+
+//     }
+// console.log(matches);
+//   return matches;
+//   }
+// findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7)
+//   //повертає [1, 2]
+// findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2)
+//   //повертає [17, 89, 2]
+// findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41)
+//   //повертає [24, 9, 41]
+// findMatches([63, 11, 8, 29], 4, 7, 16)
+//   //повертає []
+// /////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
