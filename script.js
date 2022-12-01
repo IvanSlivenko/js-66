@@ -1862,7 +1862,7 @@
    
 //     for (const arg of args) {
 //     // total += arg;
-//     if (arg > a) { 
+//     if (arg > a) {
 //       total = total + arg;
 //     }
 //     }
@@ -1893,12 +1893,12 @@
 //   // console.log(masUon);
 //   // console.log(...ars);
 //   for (let key of ars) {
-//     for (let x of masOun) { 
-//       if (key === x) { 
+//     for (let x of masOun) {
+//       if (key === x) {
 //         matches.push(key);
 //       }
 
-//     } 
+//     }
 
 //     }
 // console.log(matches);
@@ -1913,6 +1913,135 @@
 // findMatches([63, 11, 8, 29], 4, 7, 16)
 //   //повертає []
 // /////////////////////////////////////////////////////////////////////////////////////////////
+// console.log();
+// const user = {
+//   name: "Ivan",
+//   birdhDate: 1993,
+//   getAge: function(){
+//     return 2022 - this.birdhDate;
+//   },
+// };
+// console.log(user.getAge());
+////////////////////////////////////////////////////
+
+// function sum(a, b) {
+//   console.log(a, b);
+//   console.log(arguments);
+//   return a + b;
+//  }
+// console.log(sum(5, 9, 7));
+// //////////////////////////////////////////////////////
+// function sum(a, b, logger) {
+  
+//   const result = a + b;
+//   logger(result);
+//   return a + b;
+// }
+// function logger(arg) {
+//   console.log(arg);
+// }
+
+
+// sum(5, 3, logger);
+///////////////////////////////////////////////////
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     console.log("Returning all books");
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     console.log(`Adding book ${bookName}`);
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(text) {
+//     console.log(`Deleting book ${text}`);
+//     return `Deleting book ${text}`;
+//   },
+//   updateBook(name1, name2) {
+//     console.log(`Updating book ${name1} to ${name2}`);
+//     return `Updating book ${name1} to ${name2}`
+//   },
+  
+
+//   // Change code above this line
+// };
+
+// bookShelf.getBooks()
+//   //повертає рядок "Returning all books"
+
+// // bookShelf.addBook
+//   //- це метод об'єкта
+// bookShelf.addBook("Haze")
+//   //повертає рядок "Adding book Haze"
+// // bookShelf.removeBook
+//   //- це метод об'єкта
+// bookShelf.removeBook("Red sunset")
+//   //повертає рядок "Deleting book Red sunset"
+// // bookShelf.updateBook
+//   //- це метод об'єкта
+// bookShelf.updateBook("Sands of dune", "Dune")
+//   //повертає рядок "Updating book Sands of dune to Dune"
+  ////////////////////////////////////////////////////////
+// const bookShelf = {
+//   books: ["Останнє королівство"],
+//   getBooks() {
+//     console.log(String(this.books).toLowerCase());
+//   },
+// };
+// bookShelf.getBooks();
+// //////////////////////////////////////////////
+// const bookShelf = {
+//   books: ["Останнє королівство"],
+//   getBooks() {
+//     return this.books;
+//   },
+//   addBook(bookName) {
+//     this.books.push(bookName);
+//   },
+//   removeBook(bookName) {
+//     const bookIndex = this.books.indexOf(bookName);
+//     this.books.splice(bookIndex, 1);
+//   },
+// };
+// console.log(bookShelf.getBooks());
+
+// bookShelf.addBook("Імла");
+// bookShelf.addBook("Страж снів");
+// bookShelf.removeBook("Імла");
+
+// console.table(bookShelf);
+//////////////////////////////////////////////////
+const bookShelf = {
+  books: ["The last kingdom", "Haze", "The guardian of dreams"],
+  updateBook(oldName, newName) {
+    // Change code below this line
+    console.log(this.books);
+    const bookIndex = this.books.indexOf(oldName);
+    console.log("🚀 ~ file: script.js:2022 ~ updateBook ~ bookIndex", bookIndex)
+
+
+    this.books.splice(bookIndex, 1, newName);
+    // this.books.push(newName);
+
+    console.log(this.books);
+    console.log("///////////////////////////////");  
+
+    // Change code above this line
+  },
+};
+bookShelf.updateBook("Haze", "Dungeon chronicles")
+//, значення властивості books - це масив
+//["The last kingdom", "Dungeon //chronicles", 
+//"The guardian of dreams"]
+
+bookShelf.updateBook("The last kingdom", "Dune")
+//, значення властивості books - це масив ["Dune",
+//"Haze", "The guardian of dreams"]
+////////////////////////////////////////////////////
+
+
 
 
 
