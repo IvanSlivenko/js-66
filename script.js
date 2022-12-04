@@ -2013,44 +2013,390 @@
 
 // console.table(bookShelf);
 //////////////////////////////////////////////////
-const bookShelf = {
-  books: ["The last kingdom", "Haze", "The guardian of dreams"],
-  updateBook(oldName, newName) {
-    // Change code below this line
-    console.log(this.books);
-    const bookIndex = this.books.indexOf(oldName);
-    console.log("🚀 ~ file: script.js:2022 ~ updateBook ~ bookIndex", bookIndex)
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     console.log(this.books);
+//     const bookIndex = this.books.indexOf(oldName);
+//     console.log("🚀 ~ file: script.js:2022 ~ updateBook ~ bookIndex", bookIndex)
 
 
-    this.books.splice(bookIndex, 1, newName);
-    // this.books.push(newName);
+//     this.books.splice(bookIndex, 1, newName);
+//     // this.books.push(newName);
 
-    console.log(this.books);
-    console.log("///////////////////////////////");  
+//     console.log(this.books);
+//     console.log("///////////////////////////////");
 
-    // Change code above this line
-  },
-};
-bookShelf.updateBook("Haze", "Dungeon chronicles")
-//, значення властивості books - це масив
-//["The last kingdom", "Dungeon //chronicles", 
-//"The guardian of dreams"]
+//     // Change code above this line
+//   },
+// };
+// bookShelf.updateBook("Haze", "Dungeon chronicles")
+// //, значення властивості books - це масив
+// //["The last kingdom", "Dungeon //chronicles",
+// //"The guardian of dreams"]
 
-bookShelf.updateBook("The last kingdom", "Dune")
-//, значення властивості books - це масив ["Dune",
-//"Haze", "The guardian of dreams"]
-////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
+// bookShelf.updateBook("The last kingdom", "Dune")
+// //, значення властивості books - це масив ["Dune",
+// //"Haze", "The guardian of dreams"]
+// ////////////////////////////////////////////////////
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     // Change code below this line
+//     this.potions.push(potionName)
+//     console.log(this.potions)
+//     return this.potions
 
 
+//     // Change code above this line
+//   },
+// };
+
+// atTheOldToad.addPotion("Invisibility")
+// //, у властивості potions буде масив ["Speed potion",
+// //"Dragon breath", "Stone skin", "Invisibility"]
+// atTheOldToad.addPotion("Power potion")
+//, у властивості potions буде масив ["Speed potion",
+//"Dragon breath", "Stone skin", "Invisibility", "Power potion"]
+//////////////////////////////////////////////////////////
+// const arr = [1, 2, 64, 4, 22, 22, 98, 44, 33];
+// console.log(arr);
 
 
+// // console.log(arr.sort((a, b) => a - b));
+// // console.log(arr.sort((a, b) => b - a));
+// ////////////////////////////////////////////////////
+// const arrSum = arr.reduce((acc,el)=>acc+el,0)
+// console.log(arrSum);
 
+// const arrSum = arr.reduce((acc, el, i) => {
+//   console.log(i, acc,el,(acc+el));
+//   return acc + el
+// },0);
+
+/////////////////////////////////////////////
+// const arr = ["Katya", "TARAS", "nastya", "alyona", "ALEX", "BogDan"];
+// const filtredArr = arr.filter((el) => el === el.toUpperCase());
+// console.log(arr);
+// console.log(filtredArr);
+/////////////////////////////////////////
+
+// const arr = [1, 2, 3, 4, 5];
+// const newArr = arr.map((el) => el ** 2);
+// console.log(arr);
+// console.log(newArr);
+// // return newArr;
+
+
+// ////////////////////////////////////
+
+// const student = [
+//   {
+//   name: "alex",
+//   subject: ["Chemystry", "Computer siense"]
+//   },
+//    {
+//   name: "Ivan",
+//   subject: ["Chemystry", "Computer siense"]
+// }
+// ];
+// const subject1 = student.map(el => el.subject);
+// const subject2=student.flatMap(el => el.subject);
+// console.log(subject1);
+// console.log(subject2);
+//////////////////////////////////////////////////////
+// const cars =[
+// {
+//   make:"Ford",
+//   modcar:"Explorer",
+//   type:"suv",
+//   amount:"mmm",
+//   price:100,
+//   onSale:false,
+//   },
+//   {
+//   make:"audy",
+//   modcar:"Explorer",
+//   type:"suv",
+//   amount:"mmm",
+//   price:150,
+//   onSale:false,
+//   },
+//   {
+//   make:"Daha",
+//   modcar:"Explorer",
+//   type:"suv",
+//   amount:"mmm",
+//   price:200,
+//   onSale:false,
+//   },
+  
+// ]
+
+// const getModCars = (cars) => cars.map(car => car.modcar);
+
+// console.table(getModCars);
+
+// const makeCarsWidthaDiscont = (cars, diskount) => {
+//   cars.map((car)=> {
+//   car.price-=car.price*diskount
+//   }
+// })
+// console.log(makeCarsWidthaDiscont);
+/////////////////////////////////////////////////////////////
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     // Change code below this line
+//     this.potions.push(potionName);
+//     // console.log(this.potions);
+//     return this.potions;
+//     // Change code above this line
+//   },
+// };
+
+// atTheOldToad.addPotion("Invisibility")
+// //, у властивості potions буде масив ["Speed potion",
+// //"Dragon breath", "Stone skin", "Invisibility"]
+// atTheOldToad.addPotion("Power potion")
+// //, у властивості potions буде масив ["Speed potion",
+// //"Dragon breath", "Stone skin", "Invisibility", "Power potion
+// //////////////////////////////////////////////////////////
+// function greet(name) {
+//   console.log(`Ласкаво просимо ${name}`);
+//   }
+
+// function registerGuest(name, callback) {
+// console.log(`Реєструємо гостя ${name}`),callback(name);
+
+// }
+// registerGuest("Манго", greet);
+////////////////////////////////////////////////////////
+// function processCall(recipient,func1) {
+//   const isRecipientAvaiLabe = Math.random() > 5;
+//   // console.log(isRecipientAvaiLabe);
+//   if (isRecipientAvaiLabe) {
+//     console.log(`Абонент ${recipiеnt} не доступний, залиште повідомлення`);
+//   } else {
+//     console.log(`З"єднуємо з ${recipient}, очікуйту...`);
+//   }
+// }
+
+// processCall("Mango");
+
+////////////////////////////////////////////////////////////
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+//     const arrIndex = this.potions.indexOf(potionName);
+//     console.log(arrIndex);
+//     this.potions.splice(arrIndex, 1);
+//     console.log(this.potions);
+
+
+//     // Change code above this line
+//   },
+// };
+
+// atTheOldToad.removePotion("Dragon breath")
+//   //, у властивості potions буде масив ["Speed potion", Stone skin"]
+// atTheOldToad.removePotion("Speed potion")
+//   //, у властивості potions буде масив ["Stone skin"]
+  //////////////////////////////////////////////////////////////////////
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   updatePotionName(oldName, newName) {
+//     // Change code below this line
+//     const indexPotions = this.potions.indexOf(oldName);
+//     // console.log(indexPotions);
+//     console.log(this.potions);
+//     this.potions.splice(indexPotions, 1, newName);
+//     console.log(this.potions);
+
+//     // Change code above this line
+//   },
+// };
+
+// atTheOldToad.updatePotionName("Dragon breath", "Polymorth")
+//   //, у властивості potions буде масив ["Speed potion", "Polymorth", "Stone skin"]
+// atTheOldToad.updatePotionName("Stone skin", "Invisibility")
+  //, у властивості potions буде масив ["Speed potion", "Polymorth", "Invisibility"]/
+//////////////////////////////////////////////////////////////////////
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
+
+//   getPotions() {
+//     // console.table(this.potions);
+//     for (const potion of this.potions) {
+//       // console.log(potion.name);
+//       // console.log(potion);
+//     }
+//     console.log(this.potions);
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     console.table(this.potions);
+//     console.log(` в такому переліку потрібно знайти товар з ім"ям ${newPotion.name} `);
+//     // console.log(addYes);
+//      let addYes = [];
+//     for (const potion of this.potions) {
+//       // if (this.potions.includes(newPotion)) {
+//       if (potion.name.includes(newPotion.name)) {
+//           console.log(`Error! Potion ${newPotion.name} is already in your inventory!`);
+//           return `Error! Potion ${newPotion.name} is already in your inventory!`;
+//     }
+//       // console.log(`${newPotion.name} не дорівнює ${potion.name} тому можемо додати товар ` );
+//       addYes.push(1);
+//       // console.log(addYes);
+//     }
+//     // console.log(addYes);
+//     if (addYes.length > 0){
+//       this.potions.push(newPotion);
+//     }
+//       console.table(this.potions);
+//     },
+// ///////////////////////////////////////////////////////////////
+//   removePotion(potionName) {
+//     const potionIndex = "";
+//     const arrName = [];
+//     // console.table(this.potions);
+//     for (let element of this.potions) {
+//       arrName.push(element.name);
+//     }
+//     // console.table(arrName);
+//     // console.log(arrName);
+//     // console.log(arrName.indexOf(potionName));
+//     this.potions.splice((arrName.indexOf(potionName)),1);
+//     // console.table(this.potions);
+//     },
+// //////////////////////////////////////////////////////////////
+//   updatePotionName(oldName, newName) {
+//     console.table(this.potions);
+//     for (const potione of this.potions) {
+//       if (potione.name === oldName)
+//       {
+//         potione.name = newName;
+//       }
+//     }
+//     console.table(this.potions);
+//   },
+//   // Change code above this line
+// };
+/////////////////////////////////////////////////////
+
+// atTheOldToad.getPotions()
+  //для вихідного об'єкта повертає [ { name: "Speed potion", price: 460 }, { name: "Dragon breath", price: 780 }, { name: "Stone skin", price: 520 } ]
+
+
+// atTheOldToad.addPotion({ name: "Invisibility", price: 620 })
+  //в масиві potions останнім елементом буде цей об'єкт
+  
+// atTheOldToad.addPotion({ name: "Power potion", price: 270 })
+  //в масиві potions останнім елементом буде цей об'єкт
+
+// atTheOldToad.addPotion({ name: "Dragon breath", price: 700 })
+  //масив potions не змінюється
+  
+// atTheOldToad.addPotion({ name: "Stone skin", price: 240 })
+//массив potions не змінюється
+
+// atTheOldToad.addPotion({ name: "Dragon breath", price: 700 })
+  //, повертає рядок "Error! Potion Dragon breath is already in your inventory!"
+
+// atTheOldToad.addPotion({ name: "Stone skin", price: 240 })
+  //, повертає рядок "Error! Potion Stone skin is already in your inventory!"
+
+
+// atTheOldToad.removePotion("Dragon breath")
+//, у властивості potions буде масив [ { name: "Speed potion", price: 460 },
+//{ name: "Stone skin", price: 520 } ]
+
+// atTheOldToad.removePotion("Speed potion")
+//, у властивості potions буде масив [ { name: "Dragon breath", price: 780 },
+//{ name: "Stone skin", price: 520 }]
+///////////////////////////////////////////////////////////////////////////////
+// atTheOldToad.updatePotionName("Dragon breath", "Polymorth")
+//, у властивості potions буде масив [{ name: "Speed potion", price: 460 },
+//{ name: "Polymorth", price: 780 }, { name: "Stone skin", price: 520
+  
+// atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion")
+//, у властивості potions буде масив [{ name: "Speed potion", price: 460 },
+//{ name: "Dragon breath", price: 780 }, { name: "Invulnerability potion", price: 520 } ]
+//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+// //modul4
+// function greet(name) {
+//   return `Ласкаво просимо ${name}`
+// }
+// console.log(greet);
+/////////////////////////////////////////////////////////
+// function greet(name) {
+//   console.log(`Ласкаво просимо ${name}`);
+// }
+
+
+// function registerGuest(name, callback) {
+//   console.log(`Реєструємо гостя${name}`);
+//   callback(name);
+// };
+
+// registerGuest("Ivan", greet);
+// // ///////////////////////////////////////////////////////////////////
+// registerGuest("Masha", function notify(name) {
+//   console.log(`Шановний(на) ${name}
+//   ваш номер буде готовий за 30 хв`);
+// })
+/////////////////////////////////////////////////////////////
+// function processCall(recipient) {
+//   const isRecipientAvailable = Math.random() > 0.5;
+//   // console.log(isRecipientAvailable);
+//   if (!isRecipientAvailable) {
+//     console.log(`Абонент ${recipient}  недоступний,
+//   залиште повідомлення`);
+//   } else {
+//     console.log(`З"єднуємо з ${recipient} очікуйте`);
+//   }
+  
+// }
+// processCall("sss");
+//////////////////////////////////////////////////////////
+
+// function processCall(recipient,onAvailable,onNotAvailable) {
+//   const isRecipientAvailable = Math.random() > 0.5;
+
+//   if (!isRecipientAvailable) {
+//     onNotAvailable(recipient);
+//     return;
+//   }
+//     onAvailable(recipient);
+ 
+  
+// }
+
+// function takeCall(name) {
+//   console.log(`З"эднуємо з ${name}  , очікуйте...`);
+// }
+
+// function activateAnsveringMachine(name) {
+//   console.log(`Aбонент${name}  недоступний, залиште повідомлення`);
+// }
+
+// function leaveHoloMessage(name) {
+//   console.log(`Aбонент${name}  недоступний, записуємо голограмму`);
+// }
+// processCall("Ivan",takeCall, activateAnsveringMachine);
+///////////////////////////////////////////////////////////////////////////
+// function repatLog(n){
+// for (let i = 0; i < n; i += 1) {
+//   console.log(i);
+// }
+// }
+// repatLog(5)
+///////////////////////////////////////////////////////////////////////////
