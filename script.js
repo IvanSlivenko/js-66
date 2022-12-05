@@ -2400,3 +2400,190 @@
 // }
 // repatLog(5)
 ///////////////////////////////////////////////////////////////////////////
+// function printValue(value) {
+//   console.log(value);
+// }
+
+// // printValue("ok");
+// function prettyPrint(value) {
+//   console.log("Login value: ",value);
+// }
+
+// function repeat(n, action) {
+//   for (let i = 0; i < n; i += 1) {
+//     action(i);
+//   }
+// }
+// repeat(3, printValue);
+// repeat(3, prettyPrint);
+//////////////////////////////////////////////////////////////////////
+// const numbers = [5, 10, 15, 20, 25];
+// // for (let i = 0; i < numbers.length; i += 1) {
+// //   console.log(`Iндекс ${i}, значення ${numbers[i]}`);
+// // }
+// ///////////////////////////////////
+// numbers.forEach(function (number, index) { console.log(`Iндекс ${index}, значення ${number}`) });
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// function classicAdd(a, b, c) {
+//   const sum = a + b + c;
+//   // console.log(sum);
+//   return sum;
+// }
+// classicAdd(5, 5, 5);
+// ////////////////////////////////////////
+// const arrAdd = (a, b, c) => {
+//   const sumTwo = a + b + c;
+//   console.log(sumTwo);
+// }
+
+// arrAdd(5, 5, 6);
+/////////////////////////////////////////
+// const add = (...args) => { console.log(args); }
+// add(1, 2, 3, 4, 5);
+/////////////////////////////////////////////
+// const numbers = [5, 10, 15, 20, 25];
+// numbers.forEach(function (number, index) {
+// console.log(` Ірдекс${index}, значення  ${number}`);
+// });
+/////////////////////////////////////////////////////////
+// const numbers = [5, 10, 15, 20, 25];
+// numbers.forEach((number, index)=>{
+//  console.log(` Індекс${index}, значення  ${number}`);
+// })
+/////////////////////////////////////////////////////////
+// const numbers = [5, 10, 15, 20, 25];
+// const logMessage = (number, index) => {
+//  console.log(` Індекс${index}, значення  ${number}`);
+// };
+// numbers.forEach(logMessage);
+/////////////////////////////////////////////////////////
+// const numbers = [1, 2, 3, 4, 5];
+// const filteredNumbers = [];
+// for (let  i=0; i < numbers.length; i=+1) {
+//   if (numbers[i]>3) {
+//     filteredNumbers.push(numbers[i]);
+
+//   }
+// }
+// // console.log(filteredNumbers);
+// // console.log(111);
+
+// console.log(111);
+/////////////////////////////////////////////////////////////
+// const dirtyMultiply = (array, value)=> {
+//   for (let i = 0; i < array.length; i +=1) {
+//     array[i] = array[i] * value;
+//     console.log(array[i]);
+//   }
+// };
+
+// const numbers = [1, 2, 3, 4, 5];
+// dirtyMultiply(numbers,2);
+// console.log(numbers);
+////////////////////////////////////////////////////////////////////
+// const pureMultyPley = (array,value)=> {
+//   const newArray = [];
+// array.forEach(element => {
+//   newArray.push(element * value);
+// });
+//   console.log(newArray);
+//   return newArray;
+// };
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(numbers);
+// const doubleNumbers = pureMultyPley(numbers, 2);
+//////////////////////////////////////////////////////////////////////
+// const student = [
+//   { name: "Ivan", courses: ["Математика", "Фізика"] },
+//   { name: "Petro", courses: ["Інформатика", "Математика"] },
+//   { name: "Stepan", courses: ["Фізика", "Біологія"] },
+// ];
+// const message = student.map(student => student.courses);
+// console.log(message);
+// const messageFry = student.flatMap(student => student.courses);
+// console.log(messageFry);
+
+
+// //Математика,
+// //Фізика
+// //Інформатика
+// //Біологія
+/////////////////////////////////////////////////////////////////////////
+// const values = [51, -3, 27, 21, -68, 42, -37];
+// console.log(values);
+
+// const positiveValues = values.filter(value => value > 0);
+// console.log(positiveValues);
+
+// const negativeValues = values.filter(value => value < 0);
+// console.log(negativeValues);
+
+// const bigValues = values.filter(value => value > 1000);
+// console.log(bigValues);
+//////////////////////////////////////////////////////////////////////////////
+//  const student = [
+//   { name: "Ivan", courses: ["Математика", "Фізика"] },
+//   { name: "Petro", courses: ["Інформатика", "Математика"] },
+//   { name: "Stepan", courses: ["Фізика", "Біологія"] },
+// ];
+// const allCoursese = student.flatMap(student => student.courses);
+// console.log(allCoursese);
+
+// const uniqueCourses = allCoursese.filter((course, index, array) => array.indexOf(course) === index)
+// console.log(uniqueCourses);
+///////////////////////////////////////////////////////////////////////////
+// const LOW_SCORE = 50;
+// const HIGN_SCORE = 80;
+// const students = [
+//   { name: "Ivan", score: 83 },
+//   { name: "Petro", score: 59 },
+//   { name: "Stepan", score: 37 },
+//   { name: "Volodumur", score: 94 },
+//   {name:"Sergiy",score:64},
+
+// ];
+
+// const best = students.filter(students => students.score > HIGN_SCORE);
+// console.log(best);
+
+// const worst = students.filter(students => students.score < LOW_SCORE);
+// console.log(worst);
+// const average = students.filter(({ score }) => score >= LOW_SCORE && score < HIGN_SCORE);
+// console.log(average);
+/////////////////////////////////////////////////////////////////////////////////////////
+// const colorPickerOptions = [
+//   { label: "red", color: "#F44336" },
+//   { label: "green", color: "#4CAF50" },
+//   { label: "blue", color: "#2196F3" },
+//   { label: "pink", color: "#E91E63" },
+//   { label: "indigo", color: "#3F51B5" },
+// ];
+// const x = colorPickerOptions.find(Option => Option.label === "blue");
+// console.log(x);
+
+// const y = colorPickerOptions.findIndex(option => option.label === "blue");
+// console.log(y);
+///////////////////////////////////////////////////////////////////////////////////////////
+// function makePizza() {
+
+//   return "Your pizza is being prepared, please wait.";
+// }
+// // Change code below this line
+
+// const result = makePizza();
+// console.log(result);
+
+// const pointer = makePizza;
+//////////////////////////////////////////////////
+
+
+
+
+
+  
+
+
+
+
+
+
