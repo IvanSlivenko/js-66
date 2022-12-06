@@ -2575,7 +2575,100 @@
 
 // const pointer = makePizza;
 //////////////////////////////////////////////////
+//4/2
+// function deliverPizza(pizzaName) {
+//   return `Delivering ${pizzaName} pizza.`;
+// }
 
+// function makePizza(pizzaName) {
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// }
+
+// // Chande code below this line
+
+// function makeMessage(pizzaName,callback) {
+//   return callback(pizzaName);
+// }
+// makeMessage("Royal Grand",makePizza);
+// makeMessage("Ultracheese", deliverPizza);
+///////////////////////////////////////////////////////////
+//4/3
+// function makePizza(pizzaName, callback) {
+//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//   callback(pizzaName);
+// }
+
+// makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//   console.log(`Delivering pizza ${pizzaName}.`);
+// });
+// // Change code below this line
+
+// makePizza("Ultracheese", function eatPizza(pizzaName)  {
+//   console.log(`Eating pizza ${pizzaName}.`);
+// });
+
+
+// // Доповни другий виклик функції makePizza(pizzaName, callback),
+// // передавши другим аргументом інлайн колбек - функцію eatPizza(pizzaName),
+// // яка логує рядок "Eating pizza <назва піци>".
+
+// // Оголошена функція makePizza
+// // Функція makePizza приймає два параметри
+// // Другим аргументом під час виклику makePizza("Ultracheese")
+// // передана функція eatPizza з єдиним параметром pizzaName
+//////////////////////////////////////////////////////////////////////
+//4/4
+
+const pizzaPalace = {
+  pizzas: ["Ultracheese", "Smoked", "Four meats"],
+  order(pizzaName,makePizza,onOrderError) {
+  
+    // for (const element of this.pizzas) {
+      console.log("//");
+      console.log(this.pizzas);
+      console.log(pizzaName);
+      // console.log(element);
+      
+      if (this.pizzas.includes(pizzaName)) {
+      console.log("ok");
+      makePizza(pizzaName);
+      } else { 
+        console.log("trabl");
+      onOrderError(pizzaName);
+    }
+  // }
+},
+};
+// Change code above this line
+
+// Callback for onSuccess
+function makePizza(pizzaName) {
+  console.log(`Your order is accepted. Cooking pizza ${pizzaName}.`);
+  return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+}
+
+// Callback for onError
+function onOrderError(pizzaName) {
+  console.log(`Error! There is no pizza with a name  ${pizzaName} in the assortment. `);
+  return `Error! There is no pizza with a name  ${pizzaName} in the assortment. `;
+}
+
+// Method calls with callbacks
+// pizzaPalace.order("Smoked", makePizza, onOrderError);
+// pizzaPalace.order("Four meats", makePizza, onOrderError);
+// pizzaPalace.order("Big Mike", makePizza, onOrderError);
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+// Метод order оголошує три параметри
+// Виклик pizzaPalace.order("Smoked", makePizza, onOrderError)
+// повертає "Your order is accepted. Cooking pizza Smoked."
+// Виклик pizzaPalace.order("Four meats", makePizza, onOrderError)
+//повертає "Your order is accepted. Cooking pizza Four meats."
+// Виклик pizzaPalace.order("Big Mike", makePizza, onOrderError)
+//повертає "Error! There is no pizza with a name Big Mike in the assortment."
+// Виклик pizzaPalace.order("Vienna", makePizza, onOrderError)
+//повертає "Error! There is no pizza with a name Vienna in the assortment."
+///////////////////////////////////////////////////////////////////////////////////////
 
 
 
