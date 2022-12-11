@@ -3110,5 +3110,1304 @@
 // // Значення змінної uniqueGenres - це масив ["adventure", "history", "fiction", "mysticism", "horror"]
 // // Для обчислення значення змінної allGenders використаний метод flatMap()
 // // Для обчислення значення змінної uniqueGenres використаний метод filter()
-/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////а
+// function identify() {
+//   return this.name.toUpperCase();
+// };
+
+// function speak() {
+//   var greeting = "Helloy, I'm " + identify.call(this);
+//   console.log(greeting);
+// };
+
+// var me = {
+//   name:"Kule"
+// };
+
+// var yor = {
+//   name:"Reader"
+// };
+// // identify.call(me);
+// speak.call(me);
+// speak.call(yor);
+///////////////////////////////////////////////////////////////////////////////
+
+// function foo(num) {
+//   console.log("foo" + num);
+//   foo.count++;
+// };
+
+// foo.count = 0;
+
+// var i;
+// for (i = 0; i < 10; i++) {
+//   if (i > 5) {
+//     foo(i);
+//   }
+// };
+// console.log(foo.count);
+///////////////////////////////////////////////////////////
+// function foo(num) {
+//   console.log("foo" + num);
+//   data.test++;
+// };
+
+// var data = {
+//   test: 0
+// };
+
+
+
+// var i;
+// for (i = 0; i < 10; i++) {
+//   if (i > 5) {
+//     foo(i);
+//   }
+// };
+// console.log(data.test);
+///////////////////////////////////////////////
+// function foo(num) {
+//   console.log("foo" + num);
+//   this.count++;
+// };
+
+// foo.count = 0;
+
+// var i;
+// for (i = 0; i < 10; i++) {
+//   if (i > 5) {
+//     foo.call(foo,i);
+//   }
+// };
+// console.log(foo.count);
+///////////////////////////////////////////////////////////
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction", "mysticism"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism", "adventure"],
+//   },
+// ];
+// // Change code below this line
+// const allGenres = books.flatMap(element=>element.genres);
+// const uniqueGenres = allGenres.filter((genr, index, allGenres) => allGenres.indexOf(genr) === index);
+
+
+// console.log(allGenres);
+// console.log(uniqueGenres);
+// Значення змінної allGenres - це масив ["adventure", "history", "fiction", "mysticism", "horror", "mysticism", "adventure"]
+// Оголошена змінна uniqueGenres
+// Значення змінної uniqueGenres - це масив ["adventure", "history", "fiction", "mysticism", "horror"]
+// Для обчислення значення змінної allGenders використаний метод flatMap()
+// Для обчислення значення змінної uniqueGenres використаний метод filter()
+////////////////////////////////////////////////////////////////////////////////////////////////
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+
+// const MIN_RATING = 8;
+// const AUTHOR = "Bernard Cornwell";
+// // Change code below this line
+
+// const topRatedBooks = books.filter(book => book.rating > MIN_RATING);
+// console.log(topRatedBooks);
+// const booksByAuthor = books.filter(book => book.author === AUTHOR);
+// console.log(booksByAuthor);
+//////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ];
+
+// const getUsersWithEyeColor = (users, color) => {
+  
+//   return users.filter(user => user.eyeColor.includes(color));
+
+
+  
+// };
+
+// getUsersWithEyeColor = (users,"blue");
+// Change code above this line
+
+// Для перебирання параметра users використовується метод filter()
+// Якщо значення параметра color - це "blue", функція повертає масив об'єктів користувачів з іменами Moore Hensley, Sharlene Bush і Carey Barr
+// Якщо значення параметра color - це "green", функція повертає масив об'єктів користувачів з іменами Ross Vazquez і Elma Head
+// Якщо значення параметра color - це "brown", функція повертає масив об'єктів користувачів з іменами Blackburn Dotson і Sheree Anthony
+// Якщо значення параметра color - це будь-який інший рядок, функція повертає порожній масив
+
+// Change code below this line
+
+// const users=[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//     age: 37
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//     age: 34
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//     age: 24
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//     age: 21
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//     age: 27
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//     age: 38
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//     age: 39
+//   }
+// ];
+// const getUsersWithAge = (users, minAge, maxAge) => {
+
+
+//   return users.filter(user => user.age > minAge && user.age < maxAge);
+
+// };
+// // Change code above this line
+////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const users =[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//     age: 37
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//     age: 34
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//     age: 24
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//     age: 21
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//     age: 27
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//     age: 38
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//     age: 39
+//   }
+// ];
+// const getUsersWithFriend = (users, friendName) => {
+//    return users.filter(user=>user.friends.includes(friendName))
+// };
+// Change code above this line
+////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const users=[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//     age: 37
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//     age: 34
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//     age: 24
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//     age: 21
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//     age: 27
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//     age: 38
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//     age: 39
+//   }
+// ];
+
+// const getFriends = (users) => {
+//   const allFrends = users.flatMap(user=>user.friends);
+//   console.log(allFrends);
+//   const uniqueFrends = allFrends.filter((user,index,array)=>array.indexOf(user)===index);
+
+// console.log(uniqueFrends);
+// return uniqueFrends;
+// };
+// // Change code above this line
+// getFriends(users);
+//////////////////////////////////////////////////////////////////////////
+// const tests = ["Один", "Два", "Три", "Три", 5, 6, 7, 8, 9, 10];
+// console.log("🚀 ~ file: script.js:3573 ~ test", tests)
+// // const testTwo = tests.filter((test) => test > 5);
+// const testTwo = tests.filter((test, index, testTwo) => testTwo.indexOf(test) === index)
+
+
+// console.log("🚀 ~ file: script.js:3575 ~ testTwo", testTwo)
+////////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const users=[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//     age: 37
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//     age: 34
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//     age: 24
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//     age: 21
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//     age: 27
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//     age: 38
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//     age: 39
+//   }
+// ];
+
+// // const getActiveUsers = (users) => users.filter(user => (user.isActive));
+// const getActiveUsers = (users) => {
+//   // const allUsers = users.flatMap((user) =>`${user.name} isActive ${user.isActive}`);
+//   // console.table(allUsers);
+//   console.table(users);
+//   const activeUsers = users.filter((user) => user.isActive === true);
+//   console.table(activeUsers);
+//  }
+
+
+
+
+// getActiveUsers(users);
+// getActiveUsers(users, ["Sharlene Bush", "Elma Head", "Carey Barr","Sheree Anthony"]);
+// Change code above this line
+// getActiveUsers( "Sharlene Bush", "Elma Head", "Carey Barr","Sheree Anthony");
+// Виклик функції із зазначеним масивом користувачів повертає
+// масив об'єктів користувачів з іменами Sharlene Bush, Elma Head, Carey Barr і Sheree Anthony
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const users=[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//     age: 37
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//     age: 34
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//     age: 24
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//     age: 21
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//     age: 27
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//     age: 38
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//     age: 39
+//   }
+// ];
+
+// const getInactiveUsers =(users)=> users.filter(user=>user.isActive===false);
+   
+
+// // Change code above this line
+////////////////////////////////////////////////////////////////////////////////////////
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'The Dream of a Ridiculous Man';
+// const AUTHOR = 'Robert Sheckley';
+// // Change code below this line
+
+// // const bookWithTitle = (books) => {
+// //   console.table(books)
+// //   const BOOK_TITLE = 'The Dream of a Ridiculous Man';
+// //   const result = books.find((elemnet) => elemnet.title === BOOK_TITLE)
+// //   console.table(result);
+// // }
+// const bookWithTitle = books.find(book => book.title === BOOK_TITLE);
+
+// const bookByAuthor = books.find(book => book.author === AUTHOR);
+// // console.table(books);
+// // const bookByAuthor = (books) => {
+// //   console.table(books)
+// //   const AUTHOR = 'Robert Sheckley';
+// //   const result = books.find((elemnet) => elemnet.author === AUTHOR)
+// //   console.table(result);
+// // }
+// // bookWithTitle(books);
+// // bookByAuthor(books);
+//////////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+
+// ];
+
+// const getUserWithEmail = (users, email) => users.find(user=>user.email===email);
+// // Change code above this line
+///////////////////////////////////////////////////////////////////////////////////////////
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change code below this line
+
+// const eachElementInFirstIsEven = firstArray.every((value) => value % 2 === 0);
+// console.log("🚀 ~ file: script.js:3870 ~ eachElementInFirstIsEven", eachElementInFirstIsEven);
+
+// const eachElementInFirstIsOdd = firstArray.every((value) => value % 2> 0);
+// console.log("🚀 ~ file: script.js:3874 ~ eachElementInFirstIsOdd", eachElementInFirstIsOdd);
+
+// const eachElementInSecondIsEven = secondArray.every((value) => value % 2 === 0);
+// console.log("🚀 ~ file: script.js:3878 ~ eachElementInSecondIsEven", eachElementInSecondIsEven);
+
+// const eachElementInSecondIsOdd = secondArray.every((value) => value % 2 > 0);
+// console.log("🚀 ~ file: script.js:3882 ~ eachElementInSecondIsOdd", eachElementInSecondIsOdd);
+
+// const eachElementInThirdIsEven = thirdArray.every((value) => value % 2 === 0);
+// console.log("🚀 ~ file: script.js:3882 ~ eachElementInThirdIsEven", eachElementInThirdIsEven);
+
+// const eachElementInThirdIsOdd = thirdArray.every((value) => value % 2 > 0);
+// console.log("🚀 ~ file: script.js:3884 ~ eachElementInThirdIsOdd", eachElementInThirdIsOdd);
+///////////////////////////////////////////////////////////////////////////////////////////
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change below this line
+
+// const anyElementInFirstIsEven = firstArray.some(element=>element % 2===0);
+// console.log("🚀 ~ file: script.js:3893 ~ anyElementInFirstIsEven", anyElementInFirstIsEven)
+// const anyElementInFirstIsOdd = firstArray.some(element=>element % 2 >0);
+// console.log("🚀 ~ file: script.js:3895 ~ anyElementInFirstIsOdd", anyElementInFirstIsOdd)
+
+// const anyElementInSecondIsEven = secondArray.some(element=>element % 2===0);
+// console.log("🚀 ~ file: script.js:3898 ~ anyElementInSecondIsEven", anyElementInSecondIsEven)
+// const anyElementInSecondIsOdd = secondArray.some(element=>element % 2 >0);
+// console.log("🚀 ~ file: script.js:3900 ~ anyElementInSecondIsOdd", anyElementInSecondIsOdd)
+
+// const anyElementInThirdIsEven = thirdArray.some(element=>element % 2===0);
+// console.log("🚀 ~ file: script.js:3903 ~ anyElementInThirdIsEven", anyElementInThirdIsEven)
+// const anyElementInThirdIsOdd = thirdArray.some(element=>element % 2 >0);
+// console.log("🚀 ~ file: script.js:3905 ~ anyElementInThirdIsOdd", anyElementInThirdIsOdd)
+////////////////////////////////////////////////////////
+// Change code below this line
+// const users=[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ];
+
+// const isAnyUserActive = (users) => {
+// users.some(user=>user.isActive)
+//   console.log();(isAnyUserActive);
+// };
+
+// isAnyUserActive(users);
+// // Change code above this line
+/////////////////////////////////////////////////////////////////////////
+// var arr = [0, 1, 2, 3];
+// var total = arr.reduce((accum, element) => {
+//  console.log("🚀 ~ file: script.js:3984 ~ total ~ element", element)
+//  console.log("🚀 ~ file: script.js:3984 ~ total ~ accum", accum)
+ 
+//   return accum + element;
+// }, 0 );
+// console.log("🚀 ~ file: script.js:3988 ~ total ~ total", total)
+// console.log(total);
+/////////////////////////////////////////////////////////////////////////////////
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// console.log(playtimes);
+// // Change code below this line
+
+// const totalPlayTime = playtimes.reduce((accum, curent) => {
+//   return accum + curent;
+// }, 0);
+// console.log("🚀 ~ file: script.js:4002 ~ totalPlayTime", totalPlayTime)
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+// console.log("🚀 ~ file: script.js:4009 ~ averagePlayTime", averagePlayTime)
+
+// // Значення змінної totalPlayTime - це число 2692
+// // Значення змінної averagePlayTime - це число 673
+/////////////////////////////////////////////////////////////////////////////////////////
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+// const totalAveragePlaytimePerGame = players.reduce((accum, element) =>
+// {
+//    const result=(element.playtime / element.gamesPlayed)
+//   return accum + result;
+//  }, 0);
+// console.log(totalAveragePlaytimePerGame);
+
+// Значення змінної totalAveragePlaytimePerGame - це число 1023
+////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const users=[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ];
+
+
+// const calculateTotalBalance = (users) =>users.reduce((accum, user)=> {
+//   const result = accum + user.balance;
+//   // console.log(result);
+//   return result;
+  
+// },0);
+// // Change code above this line
+// // Виклик функції із зазначеним масивом користувачів повертає число 20916
+
+// calculateTotalBalance(users);
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const users=[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ];
+// const getTotalFriendCount = (users) =>  users.reduce((accum, element) => {
+//   const result= accum + element.friends.length;
+// // console.log(result);
+
+//   return result;
+// }, 0);
+// // Change code above this line
+// getTotalFriendCount(users);
+//////////////////////////////////////////////////////////////////////////////////////
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+// console.log(releaseDates);
+// console.log(ascendingReleaseDates);
+
+// const alphabeticalAuthors = [...authors].sort();
+// console.log(authors);
+// console.log(alphabeticalAuthors);
+// ////////////////////////////////////////////////////////////////////////
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+// console.log(ascendingReleaseDates);
+// const descendingReleaseDates = [...releaseDates].sort((a,b) => a - b);
+// console.log(descendingReleaseDates);
+// /////////////////////////////////////////////////////////////////////////////
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+//   "Howard Lovecraft",
+// ];
+// // Change code below this line
+
+// const authorsInAlphabetOrder = authors.sort((a, b) => a.localeCompare(b));
+// console.log("🚀 ~ file: script.js:4220 ~ authorsInAlphabetOrder", authorsInAlphabetOrder)
+
+
+// const authorsInReversedOrder = authors.sort((a, b) => b.localeCompare(a));;
+// console.log("🚀 ~ file: script.js:4223 ~ authorsInReversedOrder", authorsInReversedOrder)
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+
+// const sortedByAuthorName = [...books].sort((first,second)=>first.author.localeCompare(second.author));
+// console.log("🚀 ~ file: script.js:4248 ~ sortedByAuthorName", sortedByAuthorName)
+
+
+// const sortedByReversedAuthorName = [...books].sort((first,second)=>second.author.localeCompare(first.author));
+// console.log("🚀 ~ file: script.js:4252 ~ sortedByReversedAuthorName", sortedByReversedAuthorName)
+
+
+// const sortedByAscendingRating = [...books].sort((first, second) => first.rating - second.rating);
+// console.log("🚀 ~ file: script.js:4256 ~ sortedByAscendingRating", sortedByAscendingRating)
+
+
+
+// const sortedByDescentingRating = [...books].sort((first, second) => second.rating - first.rating);
+// console.log("🚀 ~ file: script.js:4261 ~ sortedByDescentingRating", sortedByDescentingRating)
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const users =[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ];
+// const sortByAscendingBalance = (users) => [...users].sort((first, second) => first.balance - second.balance);
+
+// sortByAscendingBalance(users);
+
+// // Change code above this line
+/////////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const users=[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ];
+
+// const sortByDescendingFriendCount = (users) => [...users].sort((first, second) =>
+//   second.friends.length-first.friends.length);
+
+// // Change code above this line
+// sortByDescendingFriendCount(users);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
