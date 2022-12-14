@@ -4406,6 +4406,697 @@
 // sortByDescendingFriendCount(users);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const users =[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ];
+
+// const sortByName = (users) => {
+//  const x= [...users].sort((first, second) => first.name.localeCompare (second.name))
+//   console.table(x);
+//   return x;
+// };
+
+
+// // Change code above this line
+// sortByName(users);
+/////////////////////////////////////////////////////////////////////////////////////////
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+
+// const names = [...books].filter((book, index, arr) =>
+//   book.rating > MIN_BOOK_RATING).map(element => element.author).sort((first, second)=> first.localeCompare(second));
+
+
+// console.table(books);
+// console.log(names);
+///////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const users =[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ];
+
+// const getNamesSortedByFriendCount = (users) => {
+//   const result= [...users].sort((first, second) => first.friends.length -
+//     second.friends.length).map(element => element.name);
+//   console.log(result);
+//   return result;
+ 
+
+// }
+// getNamesSortedByFriendCount(users);
+
+// // Change code above this line
+// //["Moore Hensley", "Sharlene Bush",
+// //"Elma Head", "Sheree Anthony",
+// //"Ross Vazquez", "Carey Barr",
+// //"Blackburn Dotson"]
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const users=[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ];
+
+// const getSortedFriends = (users) => {
+//   const result = [...users].flatMap(element => element.friends).filter((frend, index, arr) => arr.indexOf(frend) === index).sort((first, second) => first.localeCompare(second));
+//   console.log("🚀 ~ file: script.js:4671 ~ getSortedFriends ~ result", result);
+  
+  
+ 
+//   // console.table(uniqueFrends);
+// };
+// getSortedFriends(users);
+// // Change code above this line
+/////////////////////////////////////////////////////////////////////////////////////
+// const users=[
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman", "Adrian Cross", "Solomon Fokes"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ];
+
+// // const getTotalBalanceByGender = (users, gender) => {
+
+// //   const result=[...users].filter((element, index, arr) => element.gender === gender);
+// //   // console.table(result);
+// //   const totalBalanse = result.reduce(((accum,element) =>accum + element.balance),0);
+// //   console.log(totalBalanse);
+// // };
+
+// const getTotalBalanceByGender = (users, gender) =>
+//   [...users].filter((element, index, arr) =>
+//   element.gender === gender).reduce(((accum, element) =>
+//     accum + element.balance), 0);
+//  // Change code above this line
+
+// getTotalBalanceByGender(users, "male");
+// getTotalBalanceByGender(users, "female");
+// Якщо значення параметра gender - це рядок "male", функція повертає число 12053
+// Якщо значення параметра gender - це рядок "female", функція повертає число 8863
+////////////////////////////////////////////////////////////////////////////////////////////
+// const pizzaPalace = {
+//   pizzas: ["Supercheese", "Smoked", "Four meats"],
+//   // Change code below this line
+//   checkPizza(pizzaName) {
+     
+//     return this.pizzas.includes(pizzaName);
+    
+//   },
+//   order(pizzaName) {
+//     const isPizzaAvailable = this.checkPizza(pizzaName);
+
+//     if (!isPizzaAvailable) {
+//       console.log( `Sorry, there is no pizza named «${pizzaName}»`);
+//       return `Sorry, there is no pizza named «${pizzaName}»`;
+//     }
+
+//     console.log(`Order accepted, preparing «${pizzaName}» pizza`);
+//     return `Order accepted, preparing «${pizzaName}» pizza`;
+//   },
+//   // Change code above this line
+// };
+
+// pizzaPalace.order("Smoked");
+// pizzaPalace.order("Four meats");
+// pizzaPalace.order("Big Mike");
+// pizzaPalace.order("Viennese");
+// повертає рядок "Order accepted, preparing «Smoked» pizza"
+// Виклик pizzaPalace.order("Four meats") повертає рядок "Order accepted, preparing «Four meats» pizza"
+// Виклик pizzaPalace.order("Big Mike") повертає рядок "Sorry, there is no pizza named «Big Mike»"
+// Виклик pizzaPalace.order("Viennese") повертає рядок "Sorry, there is no pizza named «Viennese»"
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+// const customer = {
+//   username: "Mango",
+//   balance: 24000,
+//   discount: 0.1,
+//   orders: ["Burger", "Pizza", "Salad"],
+//   // Change code below this line
+//   getBalance() {
+//     return this.balance;
+//   },
+//   getDiscount() {
+//     return this.discount;
+//   },
+//   setDiscount(value) {
+//     this.discount = value;
+//   },
+//   getOrders() {
+//     return this.orders;
+//   },
+//   addOrder(cost, order) {
+//     this.balance -= cost - cost * this.discount;
+//     this.orders.push(order);
+//   },
+//   // Change code above this line
+// };
+
+// customer.setDiscount(0.15);
+// console.log(customer.getDiscount()); // 0.15
+// customer.addOrder(5000, "Steak");
+// console.log(customer.getBalance()); // 19750
+// console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
+//////////////////////////////////////////////////////////////////////////////////////
+// const historyService = {
+//   orders: [
+//     { email: "jacob@hotmail.com", dish: "Burrito" },
+//     { email: "solomon@topmail.net", dish: "Burger" },
+//     { email: "artemis@coldmail.net", dish: "Pizza" },
+//     { email: "solomon@topmail.net", dish: "Apple pie" },
+//     { email: "jacob@hotmail.com", dish: "Taco" },
+//   ],
+//   // Change code below this line
+//   getOrdersLog() {
+//     return this.orders
+//       .map(order => `email: ${order.email} dish: ${order.dish}`)
+//       .join(" - ");
+//   },
+//   getEmails() {
+//     const emails = this.orders.map(order => order.email);
+//     const uniqueEmails = new Set(emails);
+//     return [...uniqueEmails];
+//   },
+//   getOrdersByEmail(email) {
+//     return this.orders.filter(order => order.email === email);
+//   },
+//   // Change code above this line
+// };
+// Виклик historyService.getOrdersLog()
+// повертає рядок з переліком даних всіх замовлень з властивості orders
+// Виклик historyService.getEmails() повертає масив всіх унікальних
+// поштових адрес з властивості orders
+// Виклик historyService.getOrdersByEmail("solomon@topmail.net")
+// повертає[{ email: "solomon@topmail.net", dish: "Burger" },
+//   { email: "solomon@topmail.net", dish: "Apple pie" }]
+// Виклик historyService.getOrdersByEmail("artemis@coldmail.net")
+// повертає[{ email: "artemis@coldmail.net", dish: "Pizza" }]
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// const animal = {
+//   lengs: 4,
+// };
+// const dog = Object.create(animal);
+// dog.name = "Mango";
+// console.log(dog);
+// console.log(animal.isPrototypeOf(dog));
+// console.log(dog.hasOwnProperty("name"));
+// console.log(dog.hasOwnProperty("legs"));
+// console.log(dog.lengs);
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// const parent = {
+//   name: "Stacey",
+//   surname: "Moore",
+//   age: 54,
+//   heritage: "Irish",
+// };
+// // Change code below this line
+
+// const child = Object.create(parent);
+// child.name = "Jason";
+// child.age = 27;
+
+// console.log(parent.hasOwnProperty("surname"));
+// console.log(child.hasOwnProperty("name"));
+// console.log(child.name);
+// console.log(child.hasOwnProperty("age"));
+// console.log(child.age);
+// console.log(child.hasOwnProperty("surname"));
+// console.log(child.surname);
+// console.log(child.hasOwnProperty("heritage"));
+// console.log(child.heritage);
+// console.log(parent.isPrototypeOf(child));
+// // Change code above this line
+// ////////////////////////////////////////////////////////////////////////////////////
+// const ancestor = {
+//   name: "Paul",
+//   age: 83,
+//   surname: "Dawson",
+//   heritage: "Irish",
+// };
+// // Change code below this line
+
+// const parent = Object.create(ancestor);
+// parent.name = "Stacey";
+// parent.surname = "Moore";
+// parent.age = 54;
+
+// const child = Object.create(parent);
+// child.name = "Jason";
+// child.age = 27;
+
+// Change code above this line
+//////////////////////////////////////////////////////////////////////////////////////////////
+// class User {
+  
+// }
+// const mango = new User();
+// console.log(mango);
+
+// const Poly = new User;
+// console.log(Poly);
+///////////////////////////////////////////////////////////////////////////////////////////////
+// class User {
+//   constructor(name, email,tel) {
+//     this.name = name;
+//     this.email = email;
+//     this.tel = tel;
+
+//   }
+
+// }
+
+// const mango = new User("Mango", "mango@mail.com",0674708721);
+// console.log(mango);
+
+// const poly = new User("Poly", "poly@mail.com",0674708721);
+// console.log(poly);
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// class Car {
+//   // Change code below this line
+//   constructor(brand,model,prise) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.prise = prise;
+//   }
+//   // Change code above this line
+// }
+// const testOwn = new Car("Audi", "Q3", 36000);
+// console.log("🚀 ~ file: script.js:4950 ~ testOwn", testOwn)
+// const testTwo = new Car("BMW", "X5", 58900);
+// console.log("🚀 ~ file: script.js:4952 ~ testTwo", testTwo)
+// const testfry = new Car("Nissan","Murano", 31700);
+// console.log("🚀 ~ file: script.js:4954 ~ testfry", testfry)
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+// class User {
+//   constructor({ name, email }) {
+//     this.name = name;
+//     this.email = email;
+//   }
+//   getEmail() {
+//     console.log(this.email);
+//     return this.email;
+//   }
+
+//   changeEmail(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+// class Car {
+//   constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   // Change code below this line
+//   getPrice() {
+//     return this.price;
+//   }
+//   changePrice(newPrice) {
+//     this.price = newPrice;
+//   }
+
+//   // Change code above this line
+// }
+// /////////////////////////////////////////////////////////////////
+// Change code above this line
+// class Storage {
+//   constructor(items) {
+//     this.items = items;
+//   }
+//   getItems() {
+//     // console.log(this.items);
+//     return this.items;
+//   }
+//   addItem(newItem) {
+//     this.items.push(newItem);
+//     return this.items;
+//   }
+//   removeItem(itemToRemove) {
+//     const leng = this.items.length;
+//     console.log("🚀 ~ file: script.js:5003 ~ Storage ~ removeItem ~ leng", leng)
+    
+//     for (let i = 0; i < this.items.length; i= i+1) {
+//       console.log(this.items[i]);
+//       if (this.items[i].includes(itemToRemove))
+//           this.items.splice(i,1);
+//     }
+//   //   }
+//   //   this.items.cplice(Storage.indexOf(itemToRemove),1);
+//   }
+// }
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems());
+// //["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems());
+// //["Nanitoids", "Antigravitator", "Droid"]
+
+////////////////////////////////////////////////////////////////////////////////////
+// Change code above this line
+
+// class StringBuilder{
+//   constructor(initialValue) {
+//     this.value = initialValue;
+//   }
+//   getValue(initialValue) {
+//     return this.value;
+//   }
+//   padStart(initialValue) {
+//     this.value = initialValue+this.value;
+//   }
+//   padEnd(initialValue) {
+//     this.value = this.value + initialValue;
+//   }
+//   padBoth(initialValue) {
+//     this.value = initialValue + this.value + initialValue;
+//   }
+// }
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// class Car {
+//   // Change code below this line
+//   #brand;
+//   constructor ({brand,model,price }) {
+//     this.#brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   getBrand() { 
+//     return this.#brand;
+//   }
+//   changeBrand(newBrand) { 
+//     this.#brand = newBrand;
+//   }
+
+//   // Change code above this line
+// }
+////////////////////////////////////////////////////////////////////////////////////////////////////
+class Storage {
+  // Change code below this line
+#items;
+  constructor(items) {
+    this.#items = items;
+  }
+
+  getItems() {
+    return this.items;
+  }
+
+  addItem(newItem) {
+    this.items.push(newItem);
+  }
+
+  removeItem(itemToRemove) {
+    this.items = this.items.filter(item => item !== itemToRemove);
+  }
+}
+
+// Change code above this line
+const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+storage.addItem("Droid");
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+storage.removeItem("Prolonger");
+console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 
 
