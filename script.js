@@ -5057,48 +5057,204 @@
 //     this.model = model;
 //     this.price = price;
 //   }
-//   getBrand() { 
+//   getBrand() {
 //     return this.#brand;
 //   }
-//   changeBrand(newBrand) { 
+//   changeBrand(newBrand) {
 //     this.#brand = newBrand;
 //   }
 
 //   // Change code above this line
 // }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-class Storage {
-  // Change code below this line
-#items;
-  constructor(items) {
-    this.#items = items;
-  }
+// class Storage {
+//   // Change code below this line
+// #items;
+//   constructor(items) {
+//     this.#items = items;
+//   }
 
-  getItems() {
-    return this.items;
-  }
+//   getItems() {
+//     return this.#items;
+//   }
 
-  addItem(newItem) {
-    this.items.push(newItem);
-  }
+//   addItem(newItem) {
+//     this.#items.push(newItem);
+//   }
 
-  removeItem(itemToRemove) {
-    this.items = this.items.filter(item => item !== itemToRemove);
-  }
-}
+//   removeItem(itemToRemove) {
+//     this.#items = this.#items.filter(item => item !== itemToRemove);
+//   }
+// }
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// class StringBuilder {
+//   // Change code below this line
+//   #value;
+//   constructor(initialValue) {
+//     this.#value = initialValue;
+//   }
 
-// Change code above this line
-const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
-storage.addItem("Droid");
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
-storage.removeItem("Prolonger");
-console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
-///////////////////////////////////////////////////////////////////////////////////////////////////
+//   getValue() {
+//     return this.#value;
+//   }
 
+//   padEnd(str) {
+//     this.#value += str;
+//   }
 
+//   padStart(str) {
+//     this.#value = str + this.#value;
+//   }
 
+//   padBoth(str) {
+//     this.padStart(str);
+//     this.padEnd(str);
+//   }
+// }
 
+// // Change code above this line
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+// //////////////////////////////////////////////////////////////////////////////////////
+// class User {
+//   #email;
+//   constructor({name,email}) {
+//     this.name = name;
+//     this.#email = email;
+//   }
+//   get email(){
+//     return this.#email;
+//   }
+//   set email(newEmail) {
+//     if (newEmail==="") {
+//       console.error("Помилка,пошта не може бути порожнім рядком!");
+//       return;
+//     }
+//     this.#email = newEmail;
 
+//     }
+
+//   }
+
+// const mango = new User({ name: "Mango", email:"mango@mail.com" })
+// console.log(mango.name);
+// console.log(mango.email);
+// mango.email = "mango@superemail.com";
+// console.log(mango.email);
+// /////////////////////////////////////////////////////////////////////////////////////
+// class Car {
+//   // Change code below this line
+//   #brand;
+//   #model;
+//   #price;
+
+//   constructor({ brand, model, price }) {
+//     this.#brand = brand;
+//     this.#model = model;
+//     this.#price = price;
+//   }
+
+//   get brand() {
+//     return this.#brand;
+//   }
+
+//   set brand(newBrand) {
+//     this.#brand = newBrand;
+//   }
+
+//   get model() {
+//     return this.#model;
+//   }
+
+//   set model(newModel) {
+//     this.#model = newModel;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//     this.#price = newPrice;
+//   }
+//   // Change code above this line
+// }
+// const auto = new Car({ brand:"Audy", model:"LS", price: 7000});
+// console.log(auto.Brand);
+// // auto.brand = "BMW";
+// // console.log(auto.Brand);
+// /////////////////////////////////////////////////////////////////////////////////////////
+// class User {
+//   static Roles = {
+//     ADMIN: "admin",
+//     EDITOR:"editor",
+//   }
+//   #email;
+//   #role;
+//   constructor({ email, role }) {
+//     this.#email = email;
+//     this.#role = role;
+//   }
+//   get role() {
+//     return this.role;
+//   }
+//   set role(newRole) {
+//     this.role = newRole;
+//   }
+// }
+
+// const mango = new User({
+//   email: "mango@mail.com",
+//   role: User.Roles.ADMIN,
+// })
+// console.log(mango.Roles);
+// console.log(User.Roles);
+// //////////////////////////////////////////////////////////////////////////
+// class Car {
+//   static MAX_PRICE = 50000; 
+//   // Change code below this line
+//   #price;
+
+//   constructor({ price }) {
+//     this.#price = price;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//     if (newPrice < Car.MAX_PRICE)
+//     { 
+//        this.#price = newPrice;
+      
+//     }
+//    return(`Ваша ціна вище ${Car.MAX_PRICE} `);
+//   }
+//   // Change code above this line
+// }
+
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+// ///////////////////////////////////////////////////////////////
 
 
