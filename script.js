@@ -5348,45 +5348,266 @@
 // console.log(Admin.AccessLevel.BASIC);
 // console.log(Admin.AccessLevel.SUPERUSER);
 // ////////////////////////////////////////////////////////////////////////////////////////////////////
-class User {
-  email;
+// class User {
+//   email;
 
-  constructor(email) {
-    this.email = email;
-  }
+//   constructor(email) {
+//     this.email = email;
+//   }
 
-  get email() {
-    return this.email;
-  }
+//   get email() {
+//     return this.email;
+//   }
 
-  set email(newEmail) {
-    this.email = newEmail;
-  }
-}
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
 
-class Admin extends User {
-  // Change code below this line
+// class Admin extends User {
+//   // Change code below this line
+//   blacklistedEmails = [];
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
 
-  static AccessLevel = {
-    BASIC: "basic",
-    SUPERUSER: "superuser",
-  };
-
-  constructor({ email, accessLevel }) { 
-    super(email);
-    this.accessLevel = accessLevel;
+//   constructor({ email, accessLevel }) {
+//     super(email);
+//     this.accessLevel = accessLevel;
     
-  }
+//   }
+//   blacklist(email) {
+//     this.blacklistedEmails.push(email);
+    
+//   }
+//   isBlacklisted(email) {
+//     if (this.blacklistedEmails.includes(email)) {
+//       return true
+//     }
+//     else return false
+//     // Change code above this line
+//   }
+// }
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
 
-  // Change code above this line
-}
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
 
-const mango = new Admin({
-  email: "mango@mail.com",
-  accessLevel: Admin.AccessLevel.SUPERUSER,
-});
-
-console.log(mango.email); // "mango@mail.com"
-console.log(mango.accessLevel); // "superuser"
+// mango.blacklist("poly@mail.com");
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted("mango@mail.com")); // false
+// console.log(mango.isBlacklisted("poly@mail.com")); // true
 ///////////////////////////////////////////////////////////////////////////
+// const historyService = {
+//   orders: [
+//     { email: "jacob@hotmail.com", dish: "Burrito" },
+//     { email: "solomon@topmail.net", dish: "Burger" },
+//     { email: "artemis@coldmail.net", dish: "Pizza" },
+//     { email: "solomon@topmail.net", dish: "Apple pie" },
+//     { email: "jacob@hotmail.com", dish: "Taco" },
+//   ],
+//   // Change code below this line
+//   getOrdersLog() {
+    
+//      const result=this.orders
+//       .map(order => `email: ${order.email} dish: ${order.dish}`)
+//       .join(" - ");
+//     console.log(result);
+//     return result;
+//   },
+//   getEmails() {
+//     const emails = this.orders.map(order => order.email);
+//     // console.log(emails);
+//     const uniqueEmails = new Set(emails);
+//     console.log(uniqueEmails);
+//     return [...uniqueEmails];
+//   },
+//   getOrdersByEmail(email) {
+// const orderTest=this.orders.filter(order => order.email === email);
+//     console.log(orderTest);
+//     return orderTest;
+//   },
+//   // Change code above this line
+// };
+// // historyService.getOrdersLog();
+// // historyService.getEmails();
+// historyService.getOrdersByEmail("solomon@topmail.net");
+// historyService.getOrdersByEmail("jacob@hotmail.com");
 
+////////////////////////////////////////////////////////////////////////
+// const parent = {
+//   name: "Stacey",
+//   surname: "Moore",
+//   age: 54,
+//   heritage: "Irish",
+// };
+// // Change code below this line
+
+// const child = Object.create(parent);
+
+// // console.log(child);
+// // Change code above this line
+// child.name = "Jason";
+// child.age = 27;
+
+// console.log(child.heritage);
+// console.log(child.surname);
+// // child.hasOwnProperty("name");
+///////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////
+// const ancestor = {
+//   name: "Paul",
+//   age: 83,
+//   surname: "Dawson",
+//   heritage: "Irish",
+// };
+// Change code below this line
+
+// const parent = Object.create(ancestor);
+// parent.name = "Stacey";
+// parent.surname = "Moore";
+// parent.age = 54;
+
+
+// // console.log(parent.name);
+// // console.log(parent.age);
+// // console.log(parent.surname);
+// // console.log(parent.heritage);
+
+
+
+// const child = Object.create(parent);
+// child.name = "Jason";
+// child.age = 27;
+
+// // console.log(child.surname);
+// // console.log(parent.name);
+// // console.log(child.name);
+// // Change code above this line
+////////////////////////////////////////////////////////////////
+// class Car {
+//   // Change code below this line
+//   constructor(brand, model, price) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   };
+  
+
+// }
+// const result = new Car("Audi","Q3",36000);
+
+// // console.log(Car);
+// console.log(result);
+  ///////////////////////////////////////////////////////////////////////
+//   class Car {
+//   // Change code below this line
+//     constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   };
+  
+
+// }
+// const result = new Car({ brand: "Audi", model: "Q3", price: 36000});
+
+// // console.log(Car);
+// console.log(result);
+// //////////////////////////////////////////////////////////////////////////////
+// class Car {
+//   constructor({ brand, model, price }) {
+//   this.brand = brand;
+//   this.model = model;
+//   this.price = price;
+//   }
+//   // Change code below this line
+
+//   getPrice(price) {
+//     console.log(price);
+//     return price;
+//   }
+
+//   changePrice(newPrice) {
+//     this.price = newPrice;
+//   }
+  
+//   // Change code above this line
+// }
+
+// const result = new Car({ brand: "V", model: "100", price: 100 });
+// // result.getPrice(200);
+// result.changePrice(300);
+
+// console.table(result)
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+// console.log(document);
+
+// const body = document.body;
+// console.log(body);
+
+// const list = body.firstElementChild;
+// console.log(list);
+// const listTwo = body.lastElementChild;
+// // console.log(listTwo);
+// const firstListItem = list.firstElementChild;
+// // console.log(firstListItem);
+
+// const listItems = list.children;
+// // console.log(listItems);
+// ///////////////////////////////////////////////////////////////////////////////////////////////
+// const listWithId =
+// document.querySelector('#menu');
+  
+// listWithId.style.textTransform = 'uppercase';
+// listWithId.style.fontSice = '24px';
+// console.log(listWithId);
+
+// const listWidthClass =
+//   document.querySelector('.menu');
+// console.log(listWidthClass);
+  
+// const menuItemsDyTagName =
+//   document.querySelectorAll('li');
+// console.log(menuItemsDyTagName);
+
+// const menuitemsByClass =
+//   document.querySelectorAll(".menu-item");
+// console.log(menuitemsByClass);
+
+  
+// const firstMenuItem =
+//   document.querySelector(".menu-item");
+// firstMenuItem.style.color = 'tomato';
+//////////////////////////////////////////////////////////////////
+// const message =
+// document.querySelector('#message');
+// console.log(message.value);
+// console.log(message.name);
+
+// const activeLink =
+//   document.querySelector(".btn.active");
+// console.log(activeLink.href);
+  
+// const image =
+// document.querySelector(".image");
+// console.log(image.src);
+// image.src = 'https://placeimg.com/640/480/tech';
+// console.log(image.src);
+
+///////////////////////////////////////////////////////////////////////
+const text =
+  document.querySelector(".article-text");
+  console.log(text.textContent);
+
+const title =
+  document.querySelector(".article-title");
+console.log(title.textContent);
+title.textContent = "Welcome to Bhamas";
+console.log(title.textContent);
