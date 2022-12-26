@@ -1,3 +1,5 @@
+import products from './products.js';
+// console.log(products);  
 // console.log("Helloy, world");
 // console.log("22");
 // console.log(2 + 2);
@@ -5602,12 +5604,404 @@
 // console.log(image.src);
 
 ///////////////////////////////////////////////////////////////////////
-const text =
-  document.querySelector(".article-text");
-  console.log(text.textContent);
+// const text =
+//   document.querySelector(".article-text");
+//   console.log(text.textContent);
 
-const title =
-  document.querySelector(".article-title");
-console.log(title.textContent);
-title.textContent = "Welcome to Bhamas";
-console.log(title.textContent);
+// const title =
+//   document.querySelector(".article-title");
+// console.log(title.textContent);
+// title.textContent = "Welcome to Bhamas";
+// console.log(title.textContent);
+//////////////////////////////////////////////////////////////////////////
+// const text = document.querySelector('#paragraph');
+// console.log(text.classList);
+// console.log(text.classList.contains("red"));
+// text.classList.remove("big");
+// console.log(text.classList);
+// text.classList.add("new-class");
+// console.log(text.classList);
+// text.classList.add("a", "b", "c");
+// console.log(text.classList);
+// text.classList.toggle("is-hidden");
+// // text.classList.toggle("is-hidden");
+// console.log(text.classList);
+///////////////////////////////////////////////////////////////////////////////
+// const button = document.querySelector(".btn");
+// console.log(button);
+// button.style.backroundColor = "Teal";
+// button.style.fontSize = "24px";
+// button.style.textAlign = "center";
+
+// console.table(button.style);
+// ///////////////////////////////////////////////////////////////////////////////
+// const image = document.querySelector(".image");
+// console.log(image.attributes);
+// console.log(image.hasAttribute("src"));
+// console.log(image.getAttribute("alt"));
+// image.setAttribute("alt", "Amazing nature");
+// console.log(image.attributes);
+// console.log(image.getAttribute("alt"));
+// //////////////////////////////////////////////////////////////////////////////
+// const saveBtn = document.querySelector('.editor button[data-action="save"]');
+// const closeBtn = document.querySelector('.editor button[data-action="close"]');
+
+// console.log(saveBtn.dataset.action);
+// console.log(closeBtn.dataset.action);
+
+// const dishes = document.querySelectorAll(".dishes > li");
+// dishes.forEach((dish) => { console.log(dish.dataset.id) });
+// ////////////////////////////////////////////////////////////////////////////////
+// const list = document.querySelector(".usernames");
+// // console.log(list.attributes);
+// const lastItem = document.querySelector("li");
+// // console.log(lastItem);
+// lastItem.textContent = "Poly";
+// list.append(lastItem);
+
+// const firstItem = document.createElement("li");
+// firstItem.textContent = ("Ajax");
+// list.prepend(firstItem);
+// const title = document.createElement("h2");
+// title.textContent = "USERNAMES";
+// list.before(title);
+// const text = document.createElement("p");
+// text.textContent = "Lorem ipsum dolor sit amet, consecteturadipisici"
+// // text.textContent = "elit.Nostrum tenetur assumenda fugiat maxime,"
+// //   text.textContent = "soluta aspernatur quasi nihil in asperiores ad distinctio "
+// //   text.textContent = "illo et debitis error iure voluptate numquam maiores nisi."
+// //   "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+// //   "Nostrum tenetur assumenda fugiat maxime, soluta aspernatur"
+// //    "quasi nihil in asperiores ad distinctio illo et debitis error i"
+// //    "ure voluptate numquam maiores nisi!";
+// list.after(text);
+// const text = document.querySelector('.text');
+// // console.log(text);
+// // text.remove();
+// const c = document.getElementsByClassName(".link");
+// c.textContent = "1111111111111111111111111";
+// document.body.append(c);
+
+
+// console.log(c);
+////////////////////////////////////////////////////////////////////////////
+// const listX = document.querySelector("menu");
+// console.log(listX);
+// console.log(document);
+// console.log(document);
+// console.dir(document)
+// const navEl = document.querySelector('.menu');
+
+// // console.log(navEl);
+// const navElAll = document.querySelectorAll('ul');
+// // console.log(navElAll);
+
+// const navItemEl = document.querySelector('.menu-item');
+// // console.log(navItemEl);
+
+// const navX = navEl.querySelectorAll('.menu-item');
+
+// // console.log(navX);
+// const articleTitle=document.querySelector('.article')
+// // console.log(articleTitle);
+
+// const magicBtn = document.querySelector('.js-magic-btn');
+
+
+const title1 = document.getElementById("title1");
+// console.log(title1.textContent);
+title1.textContent = "Мій  новий заголовок";
+// console.log(title1.textContent);
+title1.style.fontSize = "40px";
+
+title1.getAttribute("id");
+// console.log(title1.getAttribute("class"));
+// console.log(title1.getAttribute("id"));
+const imagetest=document.getElementById("image-test")
+// console.log(imagetest.getAttribute("class"));
+// console.log(imagetest.hasAttribute("id"));
+
+const actions = document.querySelectorAll(".js-actions button");
+// console.log(actions[0].dataset);
+// console.log(actions[0].dataset.action);
+
+// console.log(actions[1].dataset);
+// console.log(actions[1].dataset.action);
+
+// console.log(actions[2].dataset);
+// console.log(actions[2].dataset.action);
+// console.log(actions[0].getAttribute('data-action'));
+// console.log(actions[1].getAttribute('data-action'));
+// console.log(actions[2].getAttribute('data-action'));
+// console.log(actions[2].dataset.action);
+
+// console.log(actions);
+// console.log(actions[2].dataset.action);
+
+
+const magic1 = document.getElementById('magic1');
+magic1.addEventListener('click', () => { 
+const imagetest = document.getElementById("image-test");
+// console.log('imagetest', imagetest);
+  // console.log(imagetest.src);
+  imagetest.src = 'https://placeimg.com/400/200/nature';
+  imagetest.alt = "111";
+  // console.log(imagetest.alt);
+
+  const title1 = document.getElementById("title1");
+  title1.style.fontSize = "40px";
+  title1.textContent = "Заголовок";
+  console.log(title1.textContent);
+
+  const inputEl = document.querySelector('.js-input')
+  inputEl.value = 111;
+  console.log(inputEl.value);
+
+
+    
+})
+
+
+
+
+
+const magic2 = document.getElementById("magic2");
+magic2.addEventListener('click', () => { 
+  
+  const imagetest = document.getElementById("image-test");
+// console.log('imagetest', imagetest);
+  // console.log(imagetest.src);
+  imagetest.src = "https://placeimg.com/640/480/animals";
+  imagetest.alt = "222";
+  // console.log(imagetest.alt);
+  const title1 = document.getElementById("title1");
+  title1.style.fontSize = "40px";
+  title1.textContent = "Мій  новий заголовок";
+  // console.log(title1.textContent);
+  const inputEl = document.querySelector('.js-input');
+  inputEl.value = 222;
+  console.log(inputEl.value);
+
+  
+})
+
+const magic3 = document.getElementById("magic3");
+magic3.addEventListener('click', () => { 
+const navElement = document.querySelector('.site-nav');
+// console.log(navElement.classList);
+navElement.classList.add('super-cool')
+// console.log(navElement.classList);
+})
+
+const magic4 = document.getElementById("magic4");
+magic4.addEventListener('click', () => { 
+const navElement = document.querySelector('.site-nav');
+// console.log(navElement.classList);
+navElement.classList.remove('super-cool')
+// console.log(navElement.classList);
+})
+
+const magic5 = document.getElementById("magic5");
+magic5.addEventListener('click', () => { 
+const navElement = document.querySelector('.site-nav');
+// console.log(navElement.classList);
+navElement.classList.toggle('super-cool')
+// console.log(navElement.classList);
+// navElement.classList.replace('site-nav','www')
+  console.log(navElement.classList.contains('super-cool'));
+  
+
+})
+
+const magic6 = document.getElementById("magic6");
+magic6.addEventListener('click', () => { 
+
+const actualInput = document.getElementById("actual-input")
+// console.log(actualInput.value);
+const actualLink = `/${actualInput.value}`;
+// const actualLink = '/portfolio';
+
+  if (actualLink.length > 1) {
+    const linkEl = document.querySelector(`.site-nav__link[href="${actualLink}" ]`);
+    // console.log(linkEl);
+    // linkEl.classList.add('site-nav__link--current');
+    linkEl.classList.toggle('site-nav__link--current');
+    // console.log("ok");
+  }
+  console.log("actualLink.length = 0");
+
+})
+
+const navElementic = document.querySelector('.site-nav');
+// console.log(navElementic);
+// console.log(navElementic.children[2]);
+// console.log(navElementic.firstElementChild);
+// console.log(navElementic.lastElementChild);
+
+const titleEl = document.createElement('h1');
+titleEl.textContent = 'Це заголовок сторінки';
+// console.log(titleEl);
+// console.log(titleEl.textContent);
+titleEl.classList.add('page-title');
+// console.log(titleEl.classList);
+// console.log(document.body);
+// console.log(document.head);
+// document.body.appendChild(titleEl)
+
+///////////////////////////////////////////////////////////
+const imageEl = document.createElement('img');
+// console.log(imageEl);
+imageEl.src = "https://cdn.pixabay.com/photo/2018/07/26/07/45/valais-3562988_1280.jpg";
+imageEl.alt = "valais-apine-mountains-glacter";
+// document.body.appendChild(imageEl);
+// console.log('imageEl', imageEl);
+// console.log(imageEl.width);
+imageEl.width = 640 ;
+// console.log(imageEl.height);
+
+//////////////////////////////////////////////////////////
+const navItemEl = document.createElement('li');
+navItemEl.classList.add('site-nav__item');
+
+const navLinkEl = document.createElement('a');
+navLinkEl.classList.add('site-nav__link');
+navLinkEl.textContent = "Особистий кабінет";
+navLinkEl.href = "/profile";
+
+navItemEl.appendChild(navLinkEl)
+
+// console.log('navItemEl', navItemEl); 
+// console.log(navLinkEl);
+
+const navEl = document.querySelector('.site-nav');
+// console.log(navEl);
+// navEl.appendChild(navItemEl);
+navEl.insertBefore(navItemEl, navEl.firstElementChild);
+// navEl.insertBefore(navItemEl, navEl.lastElementChild);
+// navEl.insertBefore(navItemEl, navEl.children[1]);
+
+const heroEl = document.querySelector('.hero');
+// heroEl.appendChild(titleEl);
+// heroEl.appendChild(imageEl);
+heroEl.append(titleEl,imageEl);
+// heroEl.prepend(titleEl,imageEl);
+
+/////////////////////////////////////////////////////////////
+const colorPickerOptions = [
+  { label: 'red', color: '#f44336' },
+  { label: 'green', color: '#4CAF50' },
+  { label: 'blue', color: '#2196F3' },
+  { label: 'grey', color: '#607D8B' },
+  { label: 'pink', color: '#E91e63' },
+  { label: 'indigo', color: '#3F515B' },
+  
+];
+
+
+// const option = colorPickerOptions[0];
+
+// const buttonEl = document.createElement('button');
+// buttonEl.type = "bytton";
+// buttonEl.textContent = option.label;
+// buttonEl.style.backgroundColor = option.color;
+// console.log(buttonEl);
+///////////////////////////////////////////////////////////////////
+// const elements = [];
+// for (let i = 0; i < colorPickerOptions.length; i+=1) {
+//   // console.log(colorPickerOptions[i]);
+ 
+  
+// const option = colorPickerOptions[i];
+
+// const buttonEl = document.createElement('button');
+//   buttonEl.type = "bytton";
+//   buttonEl.classList.add('color-picker__option');
+//   buttonEl.textContent = option.label;
+//   buttonEl.style.backgroundColor = option.color;
+//   elements.push(buttonEl);
+// }
+// console.log(elements);
+// ///////////////////////////////////////////////////////////////////////
+// const elements = colorPickerOptions.map(option => { 
+//   const buttonEl = document.createElement('button');
+//   buttonEl.type = "bytton";
+//   buttonEl.classList.add('color-picker__option');
+//   buttonEl.textContent = option.label;
+//   buttonEl.style.backgroundColor = option.color;
+//   return buttonEl;
+// });
+
+
+// console.log(colorPickerContainerEl);
+//////////////////////////////////////////////////////////////////////////
+
+const makeColorPickerOptions = options => { 
+  return options.map(option => {
+    const buttonEl = document.createElement('button');
+    buttonEl.type = "bytton";
+    buttonEl.classList.add('color-picker__option');
+    buttonEl.textContent = option.label;
+    buttonEl.style.backgroundColor = option.color;
+    return buttonEl;
+  });
+}
+const elements = makeColorPickerOptions(colorPickerOptions);
+// console.log(elements);
+const colorPickerContainerEl = document.querySelector('.js-color-picker');
+colorPickerContainerEl.append(...elements);
+////////////////////////////////////////////////////////////////////////////////////
+// const product = {
+//   name: 'Сервоприводи',
+//   description: 'qwer qwerqqwerfrewutrequvnvbnfjghbn, mcvnfbgvalkgbvfvnflkbvvn ',
+//   price: 2000,
+//   available: true,
+//   onSale:true,
+  
+// }
+// const productEl = document.createElement('article');
+// productEl.classList.add('product');
+ 
+// const nameEl = document.createElement('h2');
+// nameEl.textContent = product.name;
+// nameEl.classList.add('product__name');
+
+// const descrEl = document.createElement('p');
+// descrEl.textContent = product.description;
+// descrEl.classList.add('product__descr');
+
+// const priceEl = document.createElement('p');
+// priceEl.textContent = `Цена:  ${product.price } кредитів`;
+// priceEl.classList.add('product__price');
+
+// productEl.append(nameEl, descrEl, priceEl);
+/////////////////////////////////////////////////////
+
+// console.log(productEl);
+// console.log(nameEl);
+// console.log(descrEl);
+// console.log(priceEl);
+// console.log(productEl);
+// console.log(products);
+
+const makeProdactCard = ({name,description,price }) => { 
+  const productEl = document.createElement('article');
+productEl.classList.add('product');
+ 
+const nameEl = document.createElement('h2');
+nameEl.textContent = name;
+nameEl.classList.add('product__name');
+
+const descrEl = document.createElement('p');
+descrEl.textContent = description;
+descrEl.classList.add('product__descr');
+
+const priceEl = document.createElement('p');
+priceEl.textContent = `Цена:  ${price } кредитів`;
+  priceEl.classList.add('product__price');
+  productEl.append(nameEl, descrEl, priceEl);
+  return productEl;
+}
+// console.log(products);
+// console.log(makeProdactCard(products[1]));
+const tovary = products.map(makeProdactCard);
+console.log(tovary);

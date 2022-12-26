@@ -7,6 +7,7 @@
     <title>Lesson 01</title>
 </head>
 <body>
+  <section class="hero">
     <ul id="menu" class="menu">
   <li class="menu-item">home</li>
   <li  class="menu-item">about</li>
@@ -29,10 +30,87 @@ alt="" width="320">
 <!-- //////////////////////////////////////////////////////////////// -->
 <article class="article">
   <h2 class="article-title">Welcome to Hawaii!</h2>
-  <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quaerat nemo veritatis quasi eius eum aliquid, nobis dolore nisi, magnam eaque iusto, necessitatibus atque laborum quam tempora ducimus dicta ipsam.</p>
+  <p class="article-text">Lorem ipsum dolor sit amet consectetur 
+    adipisicing elit. Provident quaerat nemo veritatis quasi eius
+     eum aliquid, nobis dolore nisi, magnam eaque iusto, 
+    necessitatibus atque laborum quam tempora ducimus dicta ipsam.</p>
 </article>
 <!-- //////////////////////////////////////////////////////////////// -->
-    <script src="./script.js" ></script>
+<p id="paragraph" class="text red big">Proin magna. Sed mollis, 
+  eros et ultrices tempus, mauris ipsum aliquam libero, 
+  non adipiscing dolor urna a orci. Etiam rhoncus. 
+  Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi.</p>
+  <!-- /////////////////////////////////////////////////////////////// -->
+  <img class="image" src="https://placeimg.com/400/200/nature" alt="Beautiful nature">
+  <!-- /////////////////////////////////////////////////////////////// -->
+  <div class="editor">
+  <p>Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Curabitur suscipit suscipit tellus. Phasellus gravida semper nisi.</p>
+  <div class="actions">
+    <button type="button" class="btn" data-action="save">Save</button>
+    <button type="button" class="btn" data-action="close">Close</button>
+  </div>
+</div>
+
+<ul class="dishes">
+  <li data-id="14">Baked Yak &amp; Mushrooms</li>
+  <li data-id="7">Strawberry Pancakes</li>
+  <li data-id="3">Caramel Toffee</li>
+  <li data-id="61">Pistachio Elderberry Wafer</li>
+</ul>
+<!-- //////////////////////////////////////////////////////////////////// -->
+<div class="container">
+  <ul class="usernames">
+    <li>Mango</li>
+  </ul>
+</div>
+<!-- ////////////////////////////////////////////////////// -->
+<article class="article" >
+  <h2 class="title" id="title1">Article title </h2>
+  <p class="text">Lorem ipsum dolor sit amet consectetur, 
+    adipisicing elit. Dolore, ipsa quibusdam! Praesentium 
+    accusantium fugiat distinctio quidem minima fugit eos, 
+    veniam, nam laboriosam deleniti nisi qui neque explicabo 
+    perspiciatis, consectetur non.</p>
+<a class="link" href="">Read more</a>
+</article>
+<!-- ///////////////////////////////////////////////////////////////// -->
+<button class="js-magic-btn" id="magic1">Подія 1</button>
+<button class="js-magic-btn" id="magic2" >Подія 2</button>
+<button class="js-magic-btn" id="magic3" >Подія 3</button>
+<button class="js-magic-btn" id="magic4" >Подія 4</button>
+<button class="js-magic-btn" id="magic5" >Подія 5</button>
+<button class="js-magic-btn" id="magic6" >Подія 6</button>
+ <img class="image"  id="image-test" src="https://placeimg.com/640/480/animals" alt="animals">
+<!-- ///////////////////////////////////////////////////////////////////////////////// -->
+ <div class="js-actions">
+  <input type="text" class="js-input" id="actual-input">
+<button type="button" data-action="add">Створити</button>
+<button type="button" data-action="remowe">Видалити</button>
+<button type="button" data-action="edit" data-x="y">Редагувати</button>
+
+ </div>
+
+ <ul class="site-nav">
+  <li class="site-nav__item">
+    <a href="/about" class="site-nav__link"> О нас ( about )</a>
+  </li>
+  <li class="site-nav__item">
+    <a href="/portfolio" class="site-nav__link"> Портфоліо ( portfolio )</a>
+  </li>
+  <li class="site-nav__item">
+    <a href="/contact" class="site-nav__link"> Контакти ( contact  )</a>
+  </li>
+  
+ </ul>
+
+ <div class="js-color-picker">
+
+ </div>
+ </section>
+
+<!-- //////////////////////////////////////////////////////////////// -->
+    <script src="./script.js" type="module"></script>
+    <script src="./products.js"  type="module"></script>
 </body>
 </html>
 
