@@ -1,0 +1,39 @@
+/////////////////////////////////////////////////
+Chatty events (болтливые события)
+Приемы throttle и  debounce с lodash
+[Ленивая загрузка изображений ]
+Нативная с атрибутом loading
+Библиотека lazysizes
+/////////////////////////////////////////////////
+
+Слушатель событий  
+
+const coordsOutputRef = document.querySelector('.js-coords') ................... знайшли елемент з селектором js-coords 
+let mouseMoveCbInvocationCounter = 0; ...........................................оголосили змінну mouseMoveCbInvocationCounter 
+
+window.addEventListener('mousemove', onMouseMove);...............................зчитали подію mousemove та передали в цю подію функцію onMouseMove
+
+
+function onMouseMove(event) {
+    mouseMoveCbInvocationCounter += 1;
+    coordsOutputRef.textContent = `
+    Кол-во вызовов onMouseMove : ${mouseMoveCbInvocationCounter},
+    X:${event.clientX},
+    Y:${event.clientY}
+    `;
+}.................... об"явили функцію onMouseMove
+
+throttle ........................................ 
+1.
+з"єднуємо HTML файл з сервісом lodash 
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"> </script>
+
+2.
+const throttledonMouseMove=_.throttle(onMouseMove,500).....................викликаємо throttle для функції onMouseMove з швидкістю 500 мс
+window.addEventListener('mousemove', throttledonMouseMove);................ підслуховуємо подію mousemove та підставляємо в цю подію throttledonMouseMove
+..................................................
+////////////////////////////////////////////////////////////
+
+
+
+

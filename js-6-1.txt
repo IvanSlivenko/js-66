@@ -1,0 +1,310 @@
+-Події
+.............................................................................
+-створення та видалення слухачів  
+targetBtn.addEventListener('click',handleAddListenerBtnClick)
+targetBtn.removeEventListener('click',handleAddListenerBtnClick)
+.............................................................................
+
+-Об"єкт події
+-Поведінка за замовчуванням
+-Основні події миші, форм, клавіатури
+-Майстерня: Модальне вікно 
+
+Список всіх доступних подій
+
+/////////////////////////////////////////////////////////////////
+1.Знаходимо об"єкт за допомогою qwerySrlrctor()
+2.Пишемо функцію для події
+
+3.навішуємо подію за допомогою addEventListener
+
+////////////////////////////////////////////////
+const targetBtn = document.querySelector('.js-target-btn');
+const addListenerBtn = document.querySelector('.is-add-listener');
+const removeListenerBtn = document.querySelector('.js-remove-listener');............... знаходимо  наші об"єкти
+
+addListenerBtn.addEventListener('click', () => { 
+    console.log('Вішаю подію на цільову кнопку');
+    targetBtn.addEventListener('click', () =>{
+        console.log(('Клік по цільовій кнопці'));
+    })
+}) .....................................................Додаємо подію click на addListenerBtn в якій(події) додаємо подію click 
+на  targetBtn (повідомлення =console.log(('Клік по цільовій кнопці')); )
+////////////////////////////////////////////////////////////////////////////
+
+event.prevent.Default(); ............................... Відмова від перезавантаження  сторінки під час submit форми 
+
+const form = document.querySelector('.js-register-form'); ....................Знаходимо форму по селектрору класу js-register-form
+
+form.addEventListener('submit',onFormSubmit)............... навішуємо подію 'submit' з функцією onFormSubmit
+
+function onFormSubmit (event) {
+    event.preventDefault();
+    // console.dir(event.currentTarget.elements.email.value);
+    // console.dir(event.currentTarget.elements.password.value);
+    // console.dir(event.currentTarget.elements.subscription.value);
+    // console.log('Це сабміт форми');
+
+    const formElements = event.currentTarget.elements;
+console.log(formElements);
+    const email = formElements.email.value; .......................отримуємо значення поля email
+    const password = formElements.password.value;
+
+    console.log(email);
+    console.log(pass);
+
+}.....................................................................створюємо функцію onFormSubmit
+
+const formData = new FormData(event.currentTarget);................... FormData збирає всі значення всіх полів форми
+
+ formData.forEach((x, y) => {
+        console.log('x', x);
+        console.log('y',y);
+     })
+
+Результат   console.log()
+
+..................................................
+x ..................значення
+y email.............ім"я
+x ..................значення
+y password .........ім"я 
+
+.........................................................................................................................
+
+
+// const input = document.querySelector('.js-input');
+// const nameLabel = document.querySelector('.js-button > span');
+// const license = document.querySelector('.js-license');
+// const btn = document.querySelector('.js-button');
+// // console.log(btn);................................................  список посилань
+
+
+const refs = {
+input: document.querySelector('.js-input'),
+nameLabel: document.querySelector('.js-button > span'),
+license: document.querySelector('.js-license'),
+btn: document.querySelector('.js-button'),   
+}....................................................................... об"єкт посилань, що помістили в refs
+
+refs.input.addEventListener('focus', onInputFocus);............................................ подія отримання фокусу
+refs.input.addEventListener('blur', onInputblur);.............................................. подія втрата фокусу
+
+function  onInputFocus() { 
+    console.log('input отримав focus - подію focus');
+    // console.log('////////////////////////////////////');
+};.................................................................... 
+
+function onInputblur() {
+    console.log('input втратив focus - подія blur');
+};....................................................................
+
+
+refs.input.addEventListener('change',onInputChange)
+
+function onInputChange(event) {
+console.log(event.currentTarget.value);.............................Зчитуємо значення змінної , що в інпуті 
+};
+
+............................................................................................................. працює при втраті фокуса
+
+refs.input.addEventListener('input', onInputChange);
+
+function  onInputFocus() { 
+    console.log('input отримав focus - подію focus');
+    // console.log('////////////////////////////////////');
+};
+
+function onInputblur() {
+    console.log('input втратив focus - подія blur');
+};
+
+function onInputChange(event) {
+console.log(event.currentTarget.value);
+};
+............................................................................... працює при кожній зміні input
+refs.input.addEventListener('input', onInputChange);
+
+function onInputChange(event) {
+    console.log(event.currentTarget.value);
+    refs.nameLabel.textContent = event.currentTarget.value;
+};............................................................................ Змінюємо span при кожній зміні  input
+
+refs.licenseCheckbox.addEventListener('change',onLicenseChange)
+function  onInputFocus() { 
+    console.log('input отримав focus - подію focus');
+    // console.log('////////////////////////////////////');
+};
+
+ 
+function onLicenseChange(event) {
+  console.log(event.currentTarget.checked);  
+};
+............................................................................... Працює при зміні стану Checboxa
+
+refs.licenseCheckbox.addEventListener('change',onLicenseChange)
+function  onInputFocus() { 
+    console.log('input отримав focus - подію focus');
+    // console.log('////////////////////////////////////');
+};
+
+
+ 
+function onLicenseChange(event) {
+    // console.log(event.currentTarget.checked);  
+    // console.log(refs.btn.disabled);
+    refs.btn.disabled = !event.currentTarget.checked;
+};
+............................................................................... Виключаємо disabled для btn коли  
+не event.CurrenTarget.Checked (коли чекбокс не вибраний)
+.......................................................................................................................
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Події Клавіатури
+
+Keypress...............................................передає символ на мові розкладки клавіатури 
+keydown.........клавіша натиснута......................передає назву клавіши в англ та символ
+keyup  .........клавіша відпущена після натискання.....передає символ на мові розкладки клавіатури
+click...........
+
+
+..........................................................................................
+
+const refs = {
+    output: document.querySelector('.js-output'),
+    clearBtn:document.querySelector('.js-clear'),
+};
+window.addEventListener('keydown', onKeypress);
+ 
+function onKeypress(event) {
+ console.log(event);
+    //   console.log('event.key', event.key);.................... отримуємо символ з клавіші
+   // console.log('event.code', event.code);..................... отримуємо назву клавіші
+}
+
+ 
+
+
+function onClearOutput() {
+    
+}
+..........................................................................................
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+mouseenter ............................................  подія починається при входженні в межі блоку
+mouseleave ............................................. подія починається при виході за межі блоку
+
+
+const boxRef = document.querySelector('.js-box');
+
+boxRef.addEventListener('mouseenter', onMouseEnter);
+boxRef.addEventListener('mouseleave', onMouseLeave);
+// boxRef.addEventListener('mousemove', onMouseMove);
+
+
+function onMouseEnter(event) {
+    const box = event.currentTarget;
+     box.classList.add('box--active');
+}
+
+function onMouseLeave(event) {
+    const box = event.currentTarget;
+    box.classList.remove('box--active');
+
+}
+.......................................................................................... Hover  через js
+
+
+mouseover..............................................................подія починається при входженні в межі блоку (з врахуванням дітей)
+mouseout
+.......................................................................подія починається при виході за межі блоку (з врахуванням дітей)
+
+mousemove
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Модальне вікно
+
+body.show-modal .backdrop{.........................Коли body має клас show-modal для backdrop застосовуємо такі стилі
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    }
+body.show-modal .modal{............................Коли body має клас show-modal для modalзастосовуємо такі стилі
+    transform: scale(1);
+}
+
+refs.openModalBtn.addEventListener('click', onOpenModal);
+refs.closeModalBtn.addEventListener('click', onCloseModal);
+refs.backdrop.addEventListener('click',onBackdropClick); 
+
+function onOpenModal() {
+document.body.classList.add('show-modal');
+}............................................... ..........................................Відкриваємо модальне вікно
+
+function onCloseModal() {
+    document.body.classList.remove('show-modal');..........................................Закриваємо модальне вікно
+    
+}
+
+function onBackdropClick(event) {
+    document.body.classList.remove('show-modal');
+    // console.log('Модалка закрита за допомогою клика на всю область');
+    console.log(event.currentTarget);.................................................... елемент,  на якому відловлено подію
+    console.log(event.target);............................................................елемент, на якому відбулась подія
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const refs = {
+    openModalBtn:
+    document.querySelector('[data-action="open-modal"]'),
+
+    closeModalBtn:
+        document.querySelector('[data-action="close-modal"]'),
+    backdrop:
+        document.querySelector('.js-backdrop'),
+};
+
+refs.openModalBtn.addEventListener('click', onOpenModal);
+refs.closeModalBtn.addEventListener('click', onCloseModal); 
+refs.backdrop.addEventListener('click', onBackdropClick);
+
+
+function onOpenModal() {
+    window.addEventListener('keydown',onEscKeyPress);.........................При відкритій модалці підписуємось на подію
+    document.body.classList.add('show-modal');
+}
+
+function onCloseModal() {
+    window.removeEventListener('keydown',onEscKeyPress);......................При закритій модалці відписуємось від події
+    document.body.classList.remove('show-modal');
+    // console.log('Модалка закрита за допомогою кнопки');
+}
+function onBackdropClick(event) {
+    document.body.classList.remove('show-modal');
+ 
+    if (event.target===event.currentTarget) {
+        console.log('Клікнули саме в Бекдроп !!!');
+        onCloseModal();
+    }
+}
+
+function onEscKeyPress(event) {
+    // console.log(event);
+    onCloseModal();
+
+    // if (event.code==="Escape") {
+    //     onCloseModal();
+    // }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Час завершення перегляду відео :
+01:30:43
+
+
+..................................................
+
+
+
+
+

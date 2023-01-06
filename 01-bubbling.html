@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+    <link rel="stylesheet" href="./style-7.css">
+
+    <style>
+      #parent,
+      #child,
+      #inner-child{
+        margin: 16px;
+        padding: 16px;
+        border: 1px solid#ffc107;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+
+      }
+      #parent{
+        background-color: #673ab7;
+        color: #ffc107;
+        
+      }
+      #child{
+        background-color: #448aff;
+        color:tomato;
+       
+
+      }
+      #inner-child{
+
+        background-color: #009688;
+        color: #fff;
+      }
+    </style>
+</head>
+
+<body>
+  <p><a href="/7-1.html">Головна </a></p>
+
+  <div id="parent">
+    PARENT
+    <div id="child">
+      CHILD
+      <div id="inner-child">INNER-CHILD
+        
+      </div>
+    </div>
+  </div>
+  
+  
+
+ <script src="./js/01-bubbling.js" type="module"></script>
+</body>
+</html>

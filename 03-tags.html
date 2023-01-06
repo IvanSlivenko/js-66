@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03</title>
+    <link rel="stylesheet" href="./style-7.css">
+<style>
+.tags{
+    outline: 1px solid tomato;
+    display: flex;
+    list-style: none;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+.button:last-child{
+    margin-right: 0px;
+}
+
+button{
+display: inline-block;
+margin: 5px;
+padding: 4px 10px 4px;
+background-color:#fff;
+border-radius: 4px;
+
+border: 1px solid #212121;
+font-size: 24px;
+font-weight: 500;
+white-space: nowrap;
+text-decoration: none;
+outline: none;
+}
+.tags__item{
+    margin: 5px;
+    padding: 5px;
+    outline: 1px solid green;
+}
+
+</style>
+
+
+</head>
+<body>
+    <hr>
+    <a href="7-1.html">Головна </a>
+<hr>
+
+<ul class="tags js-tags">
+    <li class="tags__item">
+        <button class="tags__btn" data-value="html">#html</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="css">#css</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="javascript">#javascript</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="npm">#npm</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="webpack">#webpack</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="react">#react</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="redux">#redux</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="nodejs">#nodejs</button>
+    </li>
+
+</ul>
+
+    <script src="./js/03-tags.js" type="module"></script>
+</body>
+</html>

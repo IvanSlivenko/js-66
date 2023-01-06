@@ -103,14 +103,157 @@ alt="" width="320">
   
  </ul>
 
- <div class="js-color-picker">
 
- </div>
+
+ <div class="js-product"></div>
+
+  <div class="js-color-picker"></div>
+<h2 class="titleEnd">Заголовок <span>Завершення</span></h2>
+
  </section>
+<table class="transaction-table js-transaction-table">
+  <thead>
+    <tr>
+      <th>ID Транзакції</th>
+      <th>Сумма</th>
+      <th>Дата</th>
+      <th>Хто</th>
+      <th>Тип Транзакції</th>
+      <th>Назва рахунку</th>
+      <th>Номер рахунку</th>
+    </tr>
+  </thead>
 
+  <tbody>
+    <tr>
+      <td>ID Транзакції</td>
+      <td>Сумма</td>
+      <td>Дата</td>
+      <td>Хто</td>
+      <td>Тип Транзакції</td>
+      <td>Назва рахунку</td>
+      <td>Номер рахунку</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+<!-- Событие mousemovetest  -->
+<p class="js-coordsTest">Количество вызовов onMouseMovetest : 0</p>
+
+<hr>
+<!-- Событие mousemove  -->
+<p class="js-coords">Количество вызовов onMouseMove : 0</p>
+<hr>
+<input type="text" class="js-input"/>
+<p class="js-output">Кількість викликів onInputChange : 0</p>
+
+
+<button type="button" class="js-target-btn">Цільова кнопка</button>
+<button type="button" class="is-add-listener">Додати слухача</button>
+<button type="button" class="js-remove-listener">Видалити слухача</button>
+
+<hr>
+
+<form class="js-register-form" autocomplete="off">
+    <div role="group">
+      <label>
+          Пошта
+          <input type="email" name="email">
+      </label>
+
+      <label>
+          Пароль
+          <input type="password" name="password">
+      </label>
+    </div>
+
+
+<div role="group">
+  <b>Тип підписки: </b>
+  <label>
+      <input type="radio" name="subscription" value="free"/>
+  </label>
+
+  <label>
+      <input type="radio" name="subscription" value="basic"/>
+  </label>
+
+  <label>
+      <input type="radio" name="subscription" value="pro"/>
+  </label>
+</div>
+
+  <button type="submit">Зареєструватись</button>
+</form>
+<!-- //////////////////////////////////////////// -->
+<hr>
+<hr>
+
+<!-- <form action="" autocomplete="off"> -->
+<label >
+  Ім"я
+  <input type="text" class="js-inputEvents" />
+</label>
+
+<p>
+<label >
+  <input type="checkbox" class="js-license" />
+  Згода з ліцензійною домовленністю
+</label>
+</p>
+
+<button type="submit" disabled class="js-button">
+  Зареєструватись як  <span>Анонім</span> 
+</button>
+<!-- </form> -->
+<!-- ////////////////////////////////// -->
+<hr>
+<hr>
+<p><a href="">Події Клавіатури</a></p>
+<hr>
+<button class="js-clear">Очистити</button>
+<p class="output js-outputOun"></p>
+
+<hr>
+<hr>
+
+<p><a href="">Події Миші</a></p>
+<div class="box js-box">
+<div class="inner-box"></div>
+</div>
+
+<hr>
+<p><a href="">Робота з модальним вікном</a></p>
+<button class="button-modal" data-action="open-modal">
+  Відкрити модалку
+</button>
+
+<div class="backdrop js-backdrop">
+  <div class="modal">
+    <h2>Modal window</h2>
+    <p>hfjdskhfjdhfjkhljdfklhjfkhfdkhdfhfkdh
+      hjfdhfdhjfkdhdfhkfdhfdhjfdjhklfdjhklfd
+      ghfkjdshdjhgjkdshgsjkgskjgjksdhgjkdsgjk
+      dghsjkghjksdgjkdsgjhdjkgsdjgjksdhgjdshgj
+    </p>
+    <button type="button" class="button-modal" 
+    data-action="close-modal">
+    Закрити
+    </button>
+  </div>
+</div>
+<hr>
 <!-- //////////////////////////////////////////////////////////////// -->
+<script src="./modal.js" type="module"></script>
+<script src="./mouse-events.js" type="module"></script> 
+<script src="./keyboard-events.js" type="module"></script>    
+<script src="./input-events.js" type="module"></script>
     <script src="./script.js" type="module"></script>
     <script src="./products.js"  type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"> </script>
 </body>
 </html>
+
+
 
