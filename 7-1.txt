@@ -1,0 +1,96 @@
+Делегування подій
+
+
+const container = document.querySelector('.js-container')
+
+container.addEventListener('click', onClick);................................................подія прослухана на контейнері
+
+function onClick(evt) {
+   
+    // console.log(evt.currentTarget);
+console.log(evt.target); ........................................ показую на чому відбулась подія  Click    
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Фільтр подій
+
+
+const container = document.querySelector('.js-container')
+
+container.addEventListener('click', onClick);
+
+function onClick(evt) {
+   if (evt.target.nodeName!=='BUTTON') {
+       return;
+   }
+
+    console.log(evt.target.nodeName);.................................................................evt.target.nodeName тип елемента
+console.log(evt.target.textContent);    
+}
+
+const addBtn = document.querySelector('.js-add-btn'); ........................................ знаходимо кнопку "Додати кнопку"
+addBtn.addEventListener('click',onAddBtnClick); .............................................. відслуховуємо подію 'Click' на кнопці  "Додати кнопку"
+
+let labelCounter = 6;
+function onAddBtnClick() {
+    const btn = document.createElement('button'); ........................створюємо кнопку
+    btn.textContent = `Кнопка${labelCounter}`;...................................... прописуємо назву кнопки
+    container.appendChild(btn);................................................. додаємо останню дитину в контейнер
+    labelCounter += 1;......................................................... збільшуємо кількість кнопок на 1ж
+    
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const tagsContainer = document.querySelector('.js-tags');............................... знаходимо наш контайнер
+
+
+tagsContainer.addEventListener('click', onTagsconteinerclick); ................. вішаємо на контейнер зчитувач подій Click
+
+function onTagsconteinerclick(e) {
+    if (e.target.nodeName!=='BUTTON') {
+        return..................................... виконуємо функцію якщо клікнули по кнопці
+    }
+    const currentActiveBtn = document.querySelector('.tags__btn--active'); ........................ знаходимо об"єкт з класом активної кнопки
+    
+ if (currentActiveBtn) {
+    currentActiveBtn.classList.remove('tags__btn--active');
+ }.........................................................................якщо знайдено об"экт з класом активної кнопки - забираємо з цієї кнопки "клас активної кнопки"
+  
+    e.target.classList.add('tags__btn--active'); .................. додаємо клас активної кнопки до об"єкту, по якому клацнули
+    console.log(e.target.textContent);
+}
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+const tagsContainer = document.querySelector('.js-tags');............................ знаходимо контейнер
+const selectedTags = new Set();..............................................................................створюємо новий масив унікальних символів
+ 
+tagsContainer.addEventListener('click', onTagsconteinerclick); . слухаємо подію click на контейнері
+
+function onTagsconteinerclick(e) {
+    if (e.target.nodeName!=='BUTTON') {
+        return
+    }............................................ виконуємо функцію якщо об"єкт = кнопка
+    const btn = e.target; ........................місце , куди клікнули
+    const tag = btn.dataset.value;...............значення дата сета місця де був клік
+    const isActive = btn.classList.contains('tags__btn--active');.....................знаходимо кнопку з класом 'tags__btn--active'
+    
+    console.log(btn.classList.contains('tags__btn--active')); 
+
+  
+   
+    if (isActive) {
+        selectedTags.delete(tag);
+          }................................. якщо кнопка з класом активності є, видаляємо її із сета.
+   
+    else { 
+        selectedTags.add(tag);    
+    }............................................якщо кнопка з класом активності немає, додаємо її в  сета.
+     
+     btn.classList.toggle('tags__btn--active'); 
+     console.log(selectedTags);
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
