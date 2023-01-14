@@ -15,39 +15,10 @@ const colors = [
 ];
 
 const paletteContainer = document.querySelector('.js-palette');
-const cardsMarkup = createColorCardsMarcup(colors);
-
-paletteContainer.insertAdjacentHTML("beforeend", cardsMarkup);
-
-paletteContainer.addEventListener('click', onPaletteContainerclick);
-
-function onPaletteContainerclick(e) {
-    const currentDiv = document.querySelector('.color-swatch')
-    if (!e.target.classList.contains('color-swatch')) {
-        return;
-    }
-    const swatchEl = e.target;
-    // console.dir(swatchEl);
-    // const parentColorCard = swatchEl.parentNode;
-    
-    const parentColorCard = swatchEl.closest('.color-card');
-    const currentParentColorCard = document.querySelector('.color-card.is-active');
-    if (currentParentColorCard) {
-        currentParentColorCard.classList.remove('is-active');
-    }
-    parentColorCard.classList.add('is-active');
-    
-    console.dir(e.target.dataset.hex);
-    
-    
-    
-}
-
-// console.log(createColorCardsMarcup(colors));
+// Створимо розмітку
 function createColorCardsMarcup(masiv) {
 
-  // const marcup = masiv.map((elem) => {
-    return masiv.map(({ hex, rgb }) => {   
+     return masiv.map(({ hex, rgb }) => {   
         return `
     <div class="color-card">
         <div
@@ -66,10 +37,44 @@ function createColorCardsMarcup(masiv) {
                    
     })
         .join('');
+  
+}
+const cardsMarkup = createColorCardsMarcup(colors);
+
+paletteContainer.insertAdjacentHTML("beforeend", cardsMarkup);
+//////////////////////////////////////////////////////////////////////////////////
+
+paletteContainer.addEventListener('click', onPaletteContainerclick);
+
+function onPaletteContainerclick(e) {
+    const isColorSwatchEl = e.target.classList.contains('color-swatch');
+
+        if (!isColorSwatchEl) {
+            return;
+        }
+
+    const swatchEl = e.target;
+    const parentColorCard = swatchEl.closest('.color-card');
+            
+    removeActiveCardClass();
+    addActiveCardClass(parentColorCard);
+    setBodyBgColor(swatchEl.dataset.hex); 
+}
+
+function setBodyBgColor(color) {
+ document.body.style.backgroundColor = color;  
+}
+
+function removeActiveCardClass() {
+    const currentActiveCard = document.querySelector('.color-card.is-active');
     
-   
-    
-    
+    if (currentActiveCard) {
+        currentActiveCard.classList.remove('is-active');
+    }  
+}
+
+function addActiveCardClass(card) {
+  card.classList.add('is-active');   
 }
 
 
